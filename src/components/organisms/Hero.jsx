@@ -4,7 +4,9 @@ import StarField from "../molecules/StarField";
 export default function Hero() {
   return (
     <section className="relative">
-      <StarField />
+      <div>
+        <StarField />
+      </div>
 
       <div className="container absolute inset-0 flex items-center justify-center text-white text-center">
         <div>
@@ -20,12 +22,12 @@ export default function Hero() {
             <a href="#projects-preview" className="button button--primary">
               Dai un'occhiata ai miei lavori
             </a>
-            <a
-              href="#about-me"
+            <Link
+              to={"/about-me"}
               className="button button--secondary max-md:w-full"
             >
               Scopri qualcosa su di me
-            </a>
+            </Link>
           </div>
         </div>
       </div>

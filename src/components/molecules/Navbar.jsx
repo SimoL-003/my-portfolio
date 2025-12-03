@@ -46,7 +46,7 @@ export default function Navbar() {
 
       {/* MOBILE NAV */}
       <nav
-        className={`md:hidden absolute right-0 top-14 bg-background border-2 border-accent-primary overflow-hidden flex flex-col w-34 transition-all duration-300 items-end p-2 mr-3
+        className={`md:hidden absolute right-0 top-14 bg-background border-2 border-accent-primary overflow-hidden flex flex-col w-34 transition-all duration-300 items-end p-2 mr-3 z-10
           ${
             openMenu
               ? "opacity-100 scale-100"
@@ -58,7 +58,7 @@ export default function Navbar() {
           <NavLink
             key={index}
             to={path}
-            className="nav__item nav__item--mobile px-4 py-3 z-50"
+            className="nav__item nav__item--mobile px-4 py-3"
             onClick={() => setOpenMenu(false)}
           >
             {pageTitle}
