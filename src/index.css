@@ -30,13 +30,13 @@
   }
 
   h1 {
-    @apply text-4xl font-bold leading-[110%];
+    @apply text-4xl font-bold leading-[130%];
     @variant md {
       @apply text-6xl;
     }
 
     @variant lg {
-      @apply text-7xl;
+      @apply text-5xl;
     }
   }
 
@@ -103,6 +103,24 @@
   }
 }
 
+@layer components {
+  .button {
+    @apply text-sm lg:text-base font-medium leading-[120%];
+  }
+
+  .button--primary {
+    @apply inline-block w-fit px-6 py-4 
+         font-semibold tracking-wide
+         bg-accent-primary text-background 
+         border-2 border-accent-primary
+         transition-all duration-300
+         hover:bg-transparent hover:text-accent-primary;
+  }
+  .button--secondary {
+    @apply inline-block w-fit px-6 py-4 font-medium tracking-wide text-accent-secondary border-2 border-accent-secondary bg-transparent transition-all duration-300 hover:bg-accent-secondary hover:border-accent-secondary hover:text-text-primary;
+  }
+}
+
 @layer utilities {
   .container {
     @apply w-[90%] md:w-[85%] max-w-7xl mx-auto;
@@ -112,7 +130,15 @@
 /* HEADER */
 
 .nav__item {
-  @apply text-sm font-medium leading-[120%] lg:text-base px-3 py-2 lg:px-4 lg:py-2 border-2 border-background relative transition-all duration-300 cursor-pointer hover:border-accent-primary;
+  @apply text-sm font-medium leading-[120%] lg:text-base px-3 py-2 lg:px-4 lg:py-2 border-2 border-background relative transition-all duration-300 cursor-pointer md:hover:border-accent-primary;
+  @variant hover {
+    @variant max-md {
+      text-decoration: underline;
+      text-decoration-color: var(--color-accent-primary);
+      text-underline-offset: 4px;
+      text-decoration-thickness: 2px;
+    }
+  }
 }
 
 .nav__item--mobile.active {
