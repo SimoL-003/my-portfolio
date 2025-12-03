@@ -14,6 +14,11 @@
 }
 
 @layer base {
+  *:focus-visible {
+    outline: 2px solid var(--color-accent-primary);
+    outline-offset: 4px;
+    border: none;
+  }
   body {
     @apply bg-background font-montserrat text-sm text-text-primary font-normal leading-[150%];
     @variant md {
@@ -96,4 +101,55 @@
   p.body-large {
     @apply text-base md:text-[1.0625rem] lg:text-lg;
   }
+}
+
+@layer utilities {
+  .container {
+    @apply w-[90%] md:w-[85%] max-w-7xl mx-auto;
+  }
+}
+
+/* HEADER */
+
+.nav__item {
+  @apply text-sm font-medium leading-[120%] lg:text-base px-3 py-2 lg:px-4 lg:py-2 border-2 border-background relative transition-all duration-300 cursor-pointer hover:border-accent-primary;
+}
+
+.nav__item .corner {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--color-accent-primary);
+  border-style: solid;
+}
+
+.nav__item.active .corner {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--color-accent-primary);
+  border-style: solid;
+}
+
+.nav__item.active .corner--tr {
+  top: -2px;
+  right: -2px;
+  border-width: 2px 2px 0 0;
+}
+.nav__item.active .corner--tl {
+  top: -2px;
+  left: -2px;
+  border-width: 2px 0 0 2px;
+}
+.nav__item.active .corner--br {
+  bottom: -2px;
+  right: -2px;
+  border-width: 0 2px 2px 0;
+}
+.nav__item.active .corner--bl {
+  bottom: -2px;
+  left: -2px;
+  border-width: 0 0 2px 2px;
 }
