@@ -115,6 +115,13 @@
   @apply text-sm font-medium leading-[120%] lg:text-base px-3 py-2 lg:px-4 lg:py-2 border-2 border-background relative transition-all duration-300 cursor-pointer hover:border-accent-primary;
 }
 
+.nav__item--mobile.active {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-primary);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
 .nav__item .corner {
   content: "";
   position: absolute;
