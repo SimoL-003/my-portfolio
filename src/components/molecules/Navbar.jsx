@@ -58,7 +58,7 @@ export default function Navbar() {
           <NavLink
             key={index}
             to={path}
-            className="nav__item nav__item--mobile px-4 py-3"
+            className="nav__item nav__item--mobile px-4 py-3 z-50"
             onClick={() => setOpenMenu(false)}
           >
             {pageTitle}

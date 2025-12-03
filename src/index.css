@@ -30,13 +30,13 @@
   }
 
   h1 {
-    @apply text-4xl font-bold leading-[110%];
+    @apply text-4xl font-bold leading-[130%];
     @variant md {
       @apply text-6xl;
     }
 
     @variant lg {
-      @apply text-7xl;
+      @apply text-5xl;
     }
   }
 
@@ -100,6 +100,24 @@
 
   p.body-large {
     @apply text-base md:text-[1.0625rem] lg:text-lg;
+  }
+}
+
+@layer components {
+  .button {
+    @apply text-sm lg:text-base font-medium leading-[120%];
+  }
+
+  .button--primary {
+    @apply inline-block w-fit px-6 py-4 
+         font-semibold tracking-wide
+         bg-accent-primary text-background 
+         border-2 border-accent-primary
+         transition-all duration-300
+         hover:bg-transparent hover:text-accent-primary;
+  }
+  .button--secondary {
+    @apply inline-block w-fit px-6 py-4 font-medium tracking-wide text-accent-secondary border-2 border-accent-secondary bg-transparent transition-all duration-300 hover:bg-accent-secondary hover:border-accent-secondary hover:text-text-primary;
   }
 }
 
