@@ -1,12 +1,21 @@
 @import "tailwindcss";
 
-/* @theme {
-} */
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-text-primary: #f3f3f3;
+  --color-text-secondary: rgba(243, 243, 243, 0.75);
+  --color-text-tertiary: rgba(243, 243, 243, 0.55);
+  --color-background: #101623;
+  --color-surface-primary: #202c46;
+  --color-surface-secondary: #304269;
+  --color-accent-primary: #ed855d;
+  --color-accent-secondary: #07a0c3;
+}
 
 @layer base {
   body {
-    font-family: "Montserrat", sans-serif;
-    @apply text-sm font-normal leading-[150%];
+    @apply bg-background font-montserrat text-sm text-text-primary font-normal leading-[150%];
     @variant md {
       @apply text-[0.9375rem];
     }
