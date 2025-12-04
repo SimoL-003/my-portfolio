@@ -19,6 +19,12 @@
     outline-offset: 4px;
     border: none;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background font-montserrat text-sm text-text-primary font-normal leading-[150%];
     @variant md {
