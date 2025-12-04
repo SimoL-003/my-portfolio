@@ -12,22 +12,20 @@ export default function Hero() {
         <div>
           <h1>
             Ciao, sono <span className="text-accent-primary">Simone</span>.
-            <span className=" inline-block mt-4">
-              Sono uno sviluppatore web.
-            </span>
+            <span className="block mt-4">Sono uno sviluppatore web.</span>
           </h1>
 
           {/* Button gropu */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-            <a href="#projects-preview" className="button button--primary">
+            <Link
+              to={"/contacts"}
+              className="button button--primary max-md:w-full"
+            >
+              Entriamo in contatto
+            </Link>
+            <a href="#projects-preview" className="button button--secondary">
               Dai un'occhiata ai miei lavori
             </a>
-            <Link
-              to={"/about-me"}
-              className="button button--secondary max-md:w-full"
-            >
-              Scopri qualcosa su di me
-            </Link>
           </div>
         </div>
       </div>
