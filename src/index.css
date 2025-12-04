@@ -53,14 +53,14 @@
   }
 
   h2 {
-    @apply text-xl font-bold leading-[120%] tracking-[1px] uppercase;
+    @apply text-2xl font-bold leading-[120%] tracking-[1px] uppercase;
 
     @variant md {
-      @apply text-2xl tracking-[1.5px];
+      @apply text-3xl tracking-[1.5px];
     }
 
     @variant lg {
-      @apply text-3xl;
+      @apply text-4xl;
     }
   }
 
@@ -105,11 +105,11 @@
 
 @layer components {
   .button {
-    @apply text-sm lg:text-base font-medium leading-[120%];
+    @apply text-sm lg:text-base font-medium leading-[120%] px-5 py-3 md:px-6 md:py-4;
   }
 
   .button--primary {
-    @apply inline-block w-fit px-6 py-4 
+    @apply inline-block w-fit
          font-semibold tracking-wide
          bg-accent-primary text-background 
          border-2 border-accent-primary
@@ -117,7 +117,11 @@
          hover:bg-transparent hover:text-accent-primary;
   }
   .button--secondary {
-    @apply inline-block w-fit px-6 py-4 font-medium tracking-wide text-accent-secondary border-2 border-accent-secondary bg-transparent transition-all duration-300 hover:bg-accent-secondary hover:border-accent-secondary hover:text-text-primary;
+    @apply inline-block w-fit font-medium tracking-wide text-accent-secondary border-2 border-accent-secondary bg-transparent transition-all duration-300 hover:bg-accent-secondary hover:border-accent-secondary hover:text-text-primary;
+  }
+
+  .label {
+    @apply uppercase px-3 py-2 bg-surface-primary text-xs lg:text-sm font-normal leading-[120%] tracking-[1px];
   }
 }
 

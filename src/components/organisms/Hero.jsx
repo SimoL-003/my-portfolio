@@ -12,9 +12,7 @@ export default function Hero() {
         <div>
           <h1>
             Ciao, sono <span className="text-accent-primary">Simone</span>.
-            <span className=" inline-block mt-4">
-              Sono uno sviluppatore web.
-            </span>
+            <span className="block mt-4">Sono uno sviluppatore web.</span>
           </h1>
 
           {/* Button gropu */}
