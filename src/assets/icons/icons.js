@@ -8,8 +8,10 @@ import {
   faBootstrap,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const icons = {
+  bars: faBars,
   html: faHtml5,
   css: faCss3Alt,
   js: faJs,

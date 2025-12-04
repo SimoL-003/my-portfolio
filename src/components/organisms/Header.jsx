@@ -3,7 +3,7 @@ import Navbar from "../molecules/Navbar";
 
 export default function Header() {
   return (
-    <header className="min-h-20 md:h-28">
+    <header className="min-h-20 md:h-28 py-4">
       <div className="container flex items-center justify-between h-full">
         <HeaderLogo />
 

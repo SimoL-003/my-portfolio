@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { stack } from "../../data/stack";
 
 export default function HomeAbout() {
