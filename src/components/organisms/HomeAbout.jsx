@@ -30,7 +30,10 @@ export default function HomeAbout() {
             <h3 className="mt-10 mb-4"> Il mio stack </h3>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               {stack.map(({ icon, title, color }, index) => (
-                <div key={index} className="label flex items-center gap-2">
+                <div
+                  key={index}
+                  className="label flex items-center gap-2 h-8.5 lg:h-9.25"
+                >
                   {icon && <FontAwesomeIcon icon={icon} size="xl" />}
                   <span>{title}</span>
                 </div>

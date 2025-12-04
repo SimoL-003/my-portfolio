@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 
 const StarField = () => {
   const canvasRef = useRef(null);
-  const HEADER_HEIGHT = 112; // altezza fissa dell'header
+  const HEADER_HEIGHT = 112;
 
   const [canvasSize, setCanvasSize] = useState({
     width: window.innerWidth,
@@ -13,31 +13,34 @@ const StarField = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    // SETTINGS
-    const MOUSE_LINK_DIST = 100;
-    const STAR_LINK_DIST = 250;
-    const FADE_START = 500;
+    // Imposta dimensioni canvas fuori dal loop
+    canvas.width = canvasSize.width;
+    canvas.height = canvasSize.height;
+
+    // STELLE proporzionali alla larghezza
+    const STAR_COUNT = Math.max(
+      40,
+      Math.floor((canvasSize.width / 1200) * 200)
+    );
+
     const COLORS = ["#ed855d", "#07a0c3"];
     const COLD_WHITE = "#E0F2FE";
 
-    // numero stelle proporzionale alla larghezza
-    const STAR_COUNT = Math.max(
-      50,
-      Math.floor((canvasSize.width / 1200) * 200)
-    );
+    const MOUSE_LINK_DIST = 100;
+    const STAR_LINK_DIST = 250;
+    const FADE_START = 500;
 
     const mouse = { x: null, y: null };
     let mouseActive = false;
 
-    // Gestione mouse
     const handleMouseMove = (e) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
       mouseActive = true;
     };
+
     document.addEventListener("mousemove", handleMouseMove);
 
-    // Classe Star
     class Star {
       constructor() {
         this.reset();
@@ -142,9 +145,6 @@ const StarField = () => {
 
     let animationFrameId;
     const animate = () => {
-      canvas.width = canvasSize.width;
-      canvas.height = canvasSize.height;
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       for (const star of stars) {
@@ -158,6 +158,7 @@ const StarField = () => {
 
     animate();
 
+    // Resize listener
     const handleResize = () => {
       setCanvasSize({
         width: window.innerWidth,
@@ -176,9 +177,13 @@ const StarField = () => {
   return (
     <canvas
       ref={canvasRef}
-      width={canvasSize.width}
-      height={canvasSize.height}
-      style={{ display: "block" }}
+      style={{
+        display: "block",
+        width: "100vw",
+        height: `calc(100vh - ${HEADER_HEIGHT}px)`,
+        maxWidth: "100vw",
+        overflow: "hidden",
+      }}
     />
   );
 };
