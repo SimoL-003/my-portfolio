@@ -16,7 +16,7 @@ export default function HomeAbout() {
           {/* Text container */}
           <div className="text-center lg:text-left lg:w-2/3 lg:p-6 lg:pl-8 max-w-prose">
             <p className="mb-4">
-              Sono <span className="text-accent-primary">Simone Leuzzi</span> ,
+              Sono <span className="text-accent-primary">Simone Leuzzi</span>,
               un aspirante{" "}
               <span className="text-accent-primary">Front-End Developer</span>{" "}
               con una forte passione per la UI, il design e il web moderno.
