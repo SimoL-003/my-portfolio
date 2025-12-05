@@ -13,8 +13,8 @@ export default function ProjectCard({
         {/* Card image */}
         <div>
           <img
-            className="mx-auto h-48 object-cover"
-            src="https://placehold.co/700x400"
+            className="mx-auto h-48 object-cover object-top w-full shadow-2xl"
+            src={img}
             alt={`Anteprima progetto ${title}`}
           />
         </div>
