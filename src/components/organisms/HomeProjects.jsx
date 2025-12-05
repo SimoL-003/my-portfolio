@@ -11,7 +11,7 @@ export default function HomeProjects() {
         {/* {homeProjects.map(({ title, id }) => (
           <div>card</div>
         ))} */}
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
           {homeProjects.map(
             ({ id, title, img, caption, repo, liveDemo, tech }) => (
               <ProjectCard
