@@ -28,7 +28,10 @@ export default function HomeProjects() {
           )}
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-          <Link to={"/contacts"} className="button button--primary">
+          <Link
+            to={"/contacts"}
+            className="button button--primary max-md:w-full text-center"
+          >
             Contattami
           </Link>
           <Link to={"/projects"} className="button button--secondary">
