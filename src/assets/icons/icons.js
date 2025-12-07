@@ -7,11 +7,23 @@ import {
   faGithub,
   faBootstrap,
   faNodeJs,
+  faLinkedin,
+  faSquareGithub,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnglesUp,
+  faBars,
+  faEnvelope,
+  faSquarePhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const icons = {
-  bars: faBars,
+  // UI
+  bars: faBars /* mobile nav menu */,
+  totop: faAnglesUp /* to top arrows */,
+
+  // Dev stack
   html: faHtml5,
   css: faCss3Alt,
   js: faJs,
@@ -20,4 +32,11 @@ export const icons = {
   github: faGithub,
   bootstrap: faBootstrap,
   node: faNodeJs,
+
+  // Footer
+  linkedIn: faLinkedin,
+  email: faEnvelope,
+  phone: faSquarePhone,
+  discord: faDiscord,
+  githubSocial: faSquareGithub,
 };
