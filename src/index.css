@@ -151,6 +151,13 @@
   }
 }
 
+.nav__item--mobile {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-secondary);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
 .nav__item--mobile.active {
   text-decoration: underline;
   text-decoration-color: var(--color-accent-primary);

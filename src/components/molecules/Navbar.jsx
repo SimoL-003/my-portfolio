@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="relative">
+    <div>
       {/* DESKTOP NAV */}
       <nav className="hidden md:flex md:gap-1 lg:gap-3">
         {navLinks.map(({ path, pageTitle }, index) => (
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* MOBILE NAV */}
       <nav
-        className={`md:hidden absolute right-0 top-14 bg-background border-2 border-accent-primary overflow-hidden flex flex-col w-34 transition-all duration-300 items-end p-2 mr-3 z-10
+        className={`md:hidden absolute right-0 top-14 left-0 bg-background border-b-2 border-accent-primary overflow-hidden flex flex-col gap-2 transition-all duration-300 items-center p-8 mr-3 z-10
           ${
             openMenu
               ? "opacity-100 scale-100"
