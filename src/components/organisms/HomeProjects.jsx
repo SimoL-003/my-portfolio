@@ -9,10 +9,9 @@ export default function HomeProjects() {
         <h2 className="text-center my-6 lg:mt-8 lg:mb-12">
           Alcuni dei miei progetti
         </h2>
-        {/* {homeProjects.map(({ title, id }) => (
-          <div>card</div>
-        ))} */}
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
+
+        {/* PROJECTS SECTION */}
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8 py-6">
           {homeProjects.map(
             ({ id, title, imgs, caption, repo, liveDemo, tech }) => (
               <ProjectCard
@@ -27,6 +26,8 @@ export default function HomeProjects() {
             )
           )}
         </div>
+
+        {/* BUTTONS */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
           <Link
             to={"/contacts"}
