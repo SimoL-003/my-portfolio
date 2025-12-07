@@ -1,14 +1,21 @@
 import { v4 as uuidv4 } from "uuid";
+import ecommercePreview from "../assets/images/projectsPreviews/ecommerce/ecommerce-productsPage.png";
+import ecommerceBudgetMode from "../assets/images/projectsPreviews/ecommerce/ecommerce-productsPage-budgetMode.png";
+import ecommerceSingleProduct from "../assets/images/projectsPreviews/ecommerce/ecommerce-singleProduct.png";
+import portfolioPreview from "../assets/images/projectsPreviews/portfolio/portfolio.png";
+import recipesPreview from "../assets/images/projectsPreviews/recipesFilter/recipes.png";
+import recipesFilter from "../assets/images/projectsPreviews/recipesFilter/recipes-filter.png";
+import actorsPreview from "../assets/images/projectsPreviews/actors/actors.png";
+import actorsFilter from "../assets/images/projectsPreviews/actors/actors-filter.png";
+import movieAppPreview from "../assets/images/projectsPreviews/movieApp/movieApp.png";
+import movieAppFilter from "../assets/images/projectsPreviews/movieApp/movieApp-searchFilter.png";
+import MovieAppModal from "../assets/images/projectsPreviews/movieApp/movieApp-modal.png";
 
 const projects = [
   {
     id: uuidv4(),
-    title: "E-commerce + Budget Mode",
-    imgs: [
-      "src/assets/images/projectsPreviews/ecommerce/ecommerce-productsPage.png",
-      "src/assets/images/projectsPreviews/ecommerce/ecommerce-productsPage-budgetMode.png",
-      "src/assets/images/projectsPreviews/ecommerce/ecommerce-singleProduct.png",
-    ],
+    title: "E-commerce con Budget Mode",
+    imgs: [ecommercePreview, ecommerceBudgetMode, ecommerceSingleProduct],
     caption:
       "Pagina prodotti di un e-commerce progettata e sviluppata da zero. Include un Budget Mode integrato che permette all’utente di stabilire un limite di spesa e ottenere suggerimenti dinamici sui prodotti compatibili.",
     repo: "https://github.com/SimoL-003/react-context-api",
@@ -20,9 +27,9 @@ const projects = [
   {
     id: uuidv4(),
     title: "Portfolio",
-    imgs: ["src/assets/images/projectsPreviews/portfolio/portfolio.png"],
+    imgs: [portfolioPreview],
     caption:
-      "L'applicazione web che stai guardando: minimal, moderna, ottimizzata per la leggibilità e costruita con un design system modulare. Animazioni leggere, struttura scalabile e attenzione ai micro-dettagli.",
+      "L'applicazione web che stai guardando: minimal, moderna, ottimizzata per la leggibilità e costruita con un design system modulare.",
     repo: "https://github.com/SimoL-003/my-portfolio",
     liveDemo: "https://simone-leuzzi.netlify.app",
     tech: ["React", "React Router", "Tailwind", "Framer Motion"],
@@ -31,10 +38,7 @@ const projects = [
   {
     id: uuidv4(),
     title: "Recipes Filter",
-    imgs: [
-      "src/assets/images/projectsPreviews/recipesFilter/recipes.png",
-      "src/assets/images/projectsPreviews/recipesFilter/recipes-filter.png",
-    ],
+    imgs: [recipesPreview, recipesFilter],
     caption:
       "App che mostra ricette da API esterna con filtri multipli (tag, difficoltà, tipo di piatto e cucina).",
     repo: "https://github.com/SimoL-003/js-recipes-api",
@@ -45,10 +49,7 @@ const projects = [
   {
     id: uuidv4(),
     title: "Actors & Actresses Directory",
-    imgs: [
-      "src/assets/images/projectsPreviews/actors/actors.png",
-      "src/assets/images/projectsPreviews/actors/actors-filter.png",
-    ],
+    imgs: [actorsPreview, actorsFilter],
     caption:
       "Galleria di attori/attrici ottenuti da API esterna, con card dettagliate e filtro per nazionalità.",
     repo: "https://github.com/SimoL-003/react-api",
@@ -66,11 +67,7 @@ const projects = [
   {
     id: uuidv4(),
     title: "Movie App",
-    imgs: [
-      "src/assets/images/projectsPreviews/movieApp/movieApp.png",
-      "src/assets/images/projectsPreviews/movieApp/movieApp-searchFilter.png",
-      "src/assets/images/projectsPreviews/movieApp/movieApp-modal.png",
-    ],
+    imgs: [movieAppPreview, movieAppFilter, MovieAppModal],
     caption:
       "App React per filtrare film per genere e titolo, con generi dinamici e possibilità di aggiungere nuovi film.",
     repo: "https://github.com/SimoL-003/react-movie-filter",
