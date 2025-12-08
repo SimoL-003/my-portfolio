@@ -1,5 +1,8 @@
 import { icons } from "../assets/icons/icons";
 import AboutSection from "../components/molecules/AboutSection";
+import { core, tools } from "../data/stack";
+import StackList from "../components/molecules/StackList";
+import StackSection from "../components/organisms/StackSection";
 
 export default function About() {
   return (
@@ -20,16 +23,7 @@ export default function About() {
       </section>
 
       {/* STACK TECNOLOGICO */}
-      <section className="py-12 lg:py-20 text-center">
-        <div className="container">
-          <h2>Stack Tecnologico</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3">
-            <h3 className="text-accent-primary">Core</h3>
-            <h3 className="text-accent-secondary">Strumenti</h3>
-            <h3>Altro</h3>
-          </div>
-        </div>
-      </section>
+      <StackSection />
 
       <div>
         {/* PERCORSO */}

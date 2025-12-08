@@ -6,63 +6,72 @@ const stack = [
   {
     title: "HTML5",
     icon: icons.html,
-    type: "#d35835",
+    type: "core",
   },
   {
     title: "CSS3",
     icon: icons.css,
-    type: "#",
+    type: "core",
   },
   {
     title: "javascript",
     icon: icons.js,
-    type: "#",
+    type: "core",
   },
   {
     title: "React",
     icon: icons.react,
-    type: "#",
+    type: "core",
   },
   {
     title: "Git",
     icon: icons.git,
-    type: "#",
+    type: "tool",
   },
   {
     title: "github",
     icon: icons.github,
-    type: "#",
+    type: "tool",
   },
   {
     title: "Express js",
     icon: icons.node,
-    type: "#",
+    type: "core",
   },
   {
     title: "restful api",
     icon: "",
-    type: "#",
+    type: "other",
   },
   {
     title: "bootstrap css",
     icon: icons.bootstrap,
-    type: "#",
+    type: "tool",
   },
   {
     title: "tailwind css",
     icon: "",
-    type: "#",
+    type: "tool",
   },
   {
     title: "responsive design",
     icon: "",
-    type: "#",
+    type: "other",
+  },
+  {
+    title: "Netlify",
+    icon: "",
+    type: "tool",
   },
   {
     title: "Figma",
     icon: icons.figma,
-    type: "#",
+    type: "tool",
   },
 ];
 
-export { stack };
+const core = stack.filter((cur) => cur.type === "core");
+const tools = stack.filter((cur) => cur.type === "tool");
+const others = stack.filter((cur) => cur.type === "other");
+
+export { stack, core, tools, others };
