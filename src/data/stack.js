@@ -1,63 +1,68 @@
 import { icons } from "../assets/icons/icons";
 
+// Type: core, tool, other
+
 const stack = [
   {
     title: "HTML5",
     icon: icons.html,
-    color: "#d35835",
+    type: "#d35835",
   },
   {
     title: "CSS3",
     icon: icons.css,
-    color: "#",
+    type: "#",
   },
   {
     title: "javascript",
     icon: icons.js,
-    color: "#",
+    type: "#",
   },
   {
     title: "React",
     icon: icons.react,
-    color: "#",
+    type: "#",
   },
   {
     title: "Git",
     icon: icons.git,
-    color: "#",
+    type: "#",
   },
   {
     title: "github",
     icon: icons.github,
-    color: "#",
+    type: "#",
   },
   {
     title: "Express js",
     icon: icons.node,
-    color: "#",
+    type: "#",
   },
   {
     title: "restful api",
     icon: "",
-    color: "#",
+    type: "#",
   },
   {
     title: "bootstrap css",
     icon: icons.bootstrap,
-    color: "#",
+    type: "#",
   },
   {
     title: "tailwind css",
     icon: "",
-    color: "#",
+    type: "#",
   },
   {
     title: "responsive design",
     icon: "",
-    color: "#",
+    type: "#",
+  },
+  {
+    title: "Figma",
+    icon: icons.figma,
+    type: "#",
   },
 ];
 
 export { stack };
-
-// html, css, js, react, git, github, tailwind, bootstrap, express js, restful api, responsive design,
