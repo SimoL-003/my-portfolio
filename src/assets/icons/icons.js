@@ -7,17 +7,54 @@ import {
   faGithub,
   faBootstrap,
   faNodeJs,
+  faLinkedin,
+  faSquareGithub,
+  faDiscord,
+  faFigma,
+  faCss,
 } from "@fortawesome/free-brands-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnglesUp,
+  faBars,
+  faBullseye,
+  faEnvelope,
+  faGear,
+  faGraduationCap,
+  faLaptopCode,
+  faMobile,
+  faPuzzlePiece,
+  faSitemap,
+  faSquarePhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const icons = {
-  bars: faBars,
+  // UI
+  bars: faBars /* mobile nav menu */,
+  totop: faAnglesUp /* to top arrows */,
+  university: faGraduationCap /* graduation cup */,
+  laptop: faLaptopCode /* computer */,
+  target: faBullseye /* target */,
+  hobby: faPuzzlePiece /* puzzle piece (hobby) */,
+
+  // Dev stack
   html: faHtml5,
   css: faCss3Alt,
+  generalCss: faCss,
   js: faJs,
   react: faReact,
   git: faGitAlt,
   github: faGithub,
   bootstrap: faBootstrap,
   node: faNodeJs,
+  figma: faFigma,
+  responsive: faMobile,
+  generalSettings: faGear,
+  sitemap: faSitemap,
+
+  // Footer
+  linkedIn: faLinkedin,
+  email: faEnvelope,
+  phone: faSquarePhone,
+  discord: faDiscord,
+  githubSocial: faSquareGithub,
 };

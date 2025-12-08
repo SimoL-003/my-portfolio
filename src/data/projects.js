@@ -62,7 +62,7 @@ const projects = [
       "useEffect",
       "Tailwind",
     ],
-    inHome: true,
+    inHome: false,
   },
   {
     id: uuidv4(),

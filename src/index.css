@@ -59,14 +59,14 @@
   }
 
   h2 {
-    @apply text-2xl font-bold leading-[120%] tracking-[1px] uppercase;
+    @apply text-2xl font-bold leading-[120%] tracking-[1px] uppercase my-6;
 
     @variant md {
       @apply text-3xl tracking-[1.5px];
     }
 
     @variant lg {
-      @apply text-4xl;
+      @apply text-4xl mt-8 mb-12;
     }
   }
 
@@ -143,26 +143,17 @@
   @apply text-sm font-medium leading-[120%] lg:text-base px-3 py-2 lg:px-4 lg:py-2 border-2 border-background relative transition-all duration-300 cursor-pointer md:hover:border-accent-primary;
   @variant hover {
     @variant max-md {
-      text-decoration: underline;
-      text-decoration-color: var(--color-accent-primary);
-      text-underline-offset: 4px;
-      text-decoration-thickness: 2px;
+      @apply underline underline-offset-4 decoration-2 decoration-accent-secondary;
     }
   }
 }
 
 .nav__item--mobile {
-  text-decoration: underline;
-  text-decoration-color: var(--color-accent-secondary);
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  @apply underline underline-offset-4 decoration-2 decoration-accent-secondary;
 }
 
 .nav__item--mobile.active {
-  text-decoration: underline;
-  text-decoration-color: var(--color-accent-primary);
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
+  @apply underline underline-offset-4 decoration-2 decoration-accent-primary;
 }
 
 .nav__item .corner {
@@ -202,4 +193,21 @@
   bottom: -2px;
   left: -2px;
   border-width: 0 0 2px 2px;
+}
+
+/* ABOUT */
+
+.about-section p {
+  @apply max-md:max-w-prose max-md:mx-auto;
+}
+.about-section p:not(:last-of-type) {
+  @apply mb-4;
+}
+
+.about-section:nth-child(even) .about-section__icon {
+  @apply md:order-2;
+}
+
+.about-section:nth-child(even) .about-section__text {
+  @apply md:order-1;
 }

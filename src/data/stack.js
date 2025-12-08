@@ -1,63 +1,77 @@
 import { icons } from "../assets/icons/icons";
 
+// Type: core, tool, other
+
 const stack = [
   {
-    title: "HTML5",
+    title: "HTML",
     icon: icons.html,
-    color: "#d35835",
+    type: "core",
   },
   {
-    title: "CSS3",
+    title: "CSS",
     icon: icons.css,
-    color: "#",
+    type: "core",
   },
   {
-    title: "javascript",
+    title: "JavaScript",
     icon: icons.js,
-    color: "#",
+    type: "core",
   },
   {
     title: "React",
     icon: icons.react,
-    color: "#",
+    type: "core",
   },
   {
     title: "Git",
     icon: icons.git,
-    color: "#",
+    type: "tool",
   },
   {
-    title: "github",
+    title: "GitHub",
     icon: icons.github,
-    color: "#",
+    type: "tool",
   },
   {
-    title: "Express js",
+    title: "Express JS",
     icon: icons.node,
-    color: "#",
+    type: "core",
   },
   {
-    title: "restful api",
-    icon: "",
-    color: "#",
+    title: "RESTful API",
+    icon: icons.generalSettings,
+    type: "other",
   },
   {
-    title: "bootstrap css",
+    title: "Bootstrap CSS",
     icon: icons.bootstrap,
-    color: "#",
+    type: "tool",
   },
   {
-    title: "tailwind css",
-    icon: "",
-    color: "#",
+    title: "Tailwind CSS",
+    icon: icons.generalCss,
+    type: "tool",
   },
   {
-    title: "responsive design",
-    icon: "",
-    color: "#",
+    title: "Responsive Design",
+    icon: icons.responsive,
+    type: "other",
+  },
+  {
+    title: "Netlify",
+    icon: icons.sitemap,
+    type: "tool",
+  },
+  {
+    title: "Figma",
+    icon: icons.figma,
+    type: "tool",
   },
 ];
 
-export { stack };
+const core = stack.filter((cur) => cur.type === "core");
+const tools = stack.filter((cur) => cur.type === "tool");
+const others = stack.filter((cur) => cur.type === "other");
 
-// html, css, js, react, git, github, tailwind, bootstrap, express js, restful api, responsive design,
+export { stack, core, tools, others };
