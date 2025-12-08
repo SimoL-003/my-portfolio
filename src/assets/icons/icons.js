@@ -11,15 +11,19 @@ import {
   faSquareGithub,
   faDiscord,
   faFigma,
+  faCss,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faAnglesUp,
   faBars,
   faBullseye,
   faEnvelope,
+  faGear,
   faGraduationCap,
   faLaptopCode,
+  faMobile,
   faPuzzlePiece,
+  faSitemap,
   faSquarePhone,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,6 +39,7 @@ export const icons = {
   // Dev stack
   html: faHtml5,
   css: faCss3Alt,
+  generalCss: faCss,
   js: faJs,
   react: faReact,
   git: faGitAlt,
@@ -42,6 +47,9 @@ export const icons = {
   bootstrap: faBootstrap,
   node: faNodeJs,
   figma: faFigma,
+  responsive: faMobile,
+  generalSettings: faGear,
+  sitemap: faSitemap,
 
   // Footer
   linkedIn: faLinkedin,

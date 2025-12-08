@@ -4,17 +4,17 @@ import { icons } from "../assets/icons/icons";
 
 const stack = [
   {
-    title: "HTML5",
+    title: "HTML",
     icon: icons.html,
     type: "core",
   },
   {
-    title: "CSS3",
+    title: "CSS",
     icon: icons.css,
     type: "core",
   },
   {
-    title: "javascript",
+    title: "JavaScript",
     icon: icons.js,
     type: "core",
   },
@@ -29,38 +29,38 @@ const stack = [
     type: "tool",
   },
   {
-    title: "github",
+    title: "GitHub",
     icon: icons.github,
     type: "tool",
   },
   {
-    title: "Express js",
+    title: "Express JS",
     icon: icons.node,
     type: "core",
   },
   {
-    title: "restful api",
-    icon: "",
+    title: "RESTful API",
+    icon: icons.generalSettings,
     type: "other",
   },
   {
-    title: "bootstrap css",
+    title: "Bootstrap CSS",
     icon: icons.bootstrap,
     type: "tool",
   },
   {
-    title: "tailwind css",
-    icon: "",
+    title: "Tailwind CSS",
+    icon: icons.generalCss,
     type: "tool",
   },
   {
-    title: "responsive design",
-    icon: "",
+    title: "Responsive Design",
+    icon: icons.responsive,
     type: "other",
   },
   {
     title: "Netlify",
-    icon: "",
+    icon: icons.sitemap,
     type: "tool",
   },
   {
