@@ -16,17 +16,21 @@ export default function HomeAbout() {
           {/* Text container */}
           <div className="text-center lg:text-left lg:w-2/3 lg:p-6 lg:pl-8 max-w-prose">
             <p className="mb-4">
-              Sono <span className="text-accent-primary">Simone Leuzzi</span>,
-              un aspirante{" "}
-              <span className="text-accent-primary">Front-End Developer</span>{" "}
+              Sono{" "}
+              <strong className="text-accent-primary">Simone Leuzzi</strong>, un
+              aspirante{" "}
+              <strong className="text-accent-primary">
+                Front-End Developer
+              </strong>{" "}
               con una forte passione per la UI, il design e il web moderno.
             </p>
             <p>
               Sto studiando e costruendo progetti con{" "}
-              <span className="text-accent-primary">React</span> per crescere
-              come sviluppatore e migliorare ogni giorno.
+              <strong className="text-accent-primary">React</strong> per
+              crescere come sviluppatore e migliorare ogni giorno.
             </p>
 
+            {/* Stack section */}
             <h3 className="mt-10 mb-4"> Il mio stack </h3>
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               {stack.map(({ icon, title }, index) => (
@@ -34,7 +38,7 @@ export default function HomeAbout() {
                   key={index}
                   className="label flex items-center gap-2 h-8.5 lg:h-9.25"
                 >
-                  {icon && <FontAwesomeIcon icon={icon} size="xl" />}
+                  <FontAwesomeIcon icon={icon} size="xl" />
                   <span>{title}</span>
                 </div>
               ))}
