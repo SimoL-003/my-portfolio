@@ -9,7 +9,7 @@ export default function ProjectCard({
   return (
     <>
       {/* CARD */}
-      <div className="card bg-surface-secondary  p-6 md:p-8 lg:p-10 2xl:p-8 shadow-lg shadow-black/50">
+      <div className="card bg-surface-secondary border border-white/10 p-6 md:p-8 lg:p-10 2xl:p-8 shadow-lg shadow-black/50">
         {/* Card image */}
         <div>
           <img

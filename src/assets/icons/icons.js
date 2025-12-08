@@ -10,11 +10,20 @@ import {
   faLinkedin,
   faSquareGithub,
   faDiscord,
+  faFigma,
+  faCss,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faAnglesUp,
   faBars,
+  faBullseye,
   faEnvelope,
+  faGear,
+  faGraduationCap,
+  faLaptopCode,
+  faMobile,
+  faPuzzlePiece,
+  faSitemap,
   faSquarePhone,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,16 +31,25 @@ export const icons = {
   // UI
   bars: faBars /* mobile nav menu */,
   totop: faAnglesUp /* to top arrows */,
+  university: faGraduationCap /* graduation cup */,
+  laptop: faLaptopCode /* computer */,
+  target: faBullseye /* target */,
+  hobby: faPuzzlePiece /* puzzle piece (hobby) */,
 
   // Dev stack
   html: faHtml5,
   css: faCss3Alt,
+  generalCss: faCss,
   js: faJs,
   react: faReact,
   git: faGitAlt,
   github: faGithub,
   bootstrap: faBootstrap,
   node: faNodeJs,
+  figma: faFigma,
+  responsive: faMobile,
+  generalSettings: faGear,
+  sitemap: faSitemap,
 
   // Footer
   linkedIn: faLinkedin,
