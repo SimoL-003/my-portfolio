@@ -16,8 +16,11 @@ export default function About() {
             un aspirante{" "}
             <strong className="text-accent-primary">Front-End Developer</strong>{" "}
             con una forte attenzione alla user experience e al design. Mi piace
-            costruire interfacce semplici, pulite e intuitive, unendo logica e
-            creatività.
+            costruire{" "}
+            <span className="text-accent-primary">
+              interfacce semplici, pulite e intuitive
+            </span>
+            , unendo logica e creatività.
           </p>
         </div>
       </section>
