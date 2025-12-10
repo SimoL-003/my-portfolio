@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import ecommercePreview from "../assets/images/projectsPreviews/ecommerce/ecommerce-productsPage.png";
 import ecommerceBudgetMode from "../assets/images/projectsPreviews/ecommerce/ecommerce-productsPage-budgetMode.png";
 import ecommerceSingleProduct from "../assets/images/projectsPreviews/ecommerce/ecommerce-singleProduct.png";
@@ -13,7 +12,7 @@ import MovieAppModal from "../assets/images/projectsPreviews/movieApp/movieApp-m
 
 const projects = [
   {
-    id: uuidv4(),
+    id: "e-commerce",
     title: "E-commerce con Budget Mode",
     imgs: [ecommercePreview, ecommerceBudgetMode, ecommerceSingleProduct],
     caption:
@@ -33,9 +32,8 @@ const projects = [
     learnings:
       "Context API avanzata, React Router, gestione fetch, UX per app complesse, clean code.",
   },
-
   {
-    id: uuidv4(),
+    id: "portfolio",
     title: "Portfolio",
     imgs: [portfolioPreview],
     caption:
@@ -47,7 +45,6 @@ const projects = [
     liveDemo: "https://simone-leuzzi.netlify.app",
     tech: ["React", "React Router", "Tailwind", "Framer Motion"],
     inHome: true,
-
     problem:
       "Costruire un portfolio moderno, scalabile e facile da aggiornare, con un design professionale.",
     solution:
@@ -55,16 +52,14 @@ const projects = [
     learnings:
       "Organizzazione di un progetto su larga scala, UI/UX, animazioni professionali, component design.",
   },
-
   {
-    id: uuidv4(),
+    id: "recipes-filter",
     title: "Recipes Filter",
     imgs: [recipesPreview, recipesFilter],
     caption:
       "App che mostra ricette provenienti da API esterna con filtri multipli (tag, difficoltà, tipo di piatto e cucina).",
     description:
       "Recipes Filter è un progetto JavaScript in cui ho voluto lavorare sulla logica pura: fetch API, rendering dinamico e filtri multipli combinati. L'app permette di visualizzare ricette e applicare filtri simultanei per tipologia, cucina, difficoltà e tag. Ogni aggiornamento del filtro ricalcola la lista in tempo reale. È un'ottima palestra per la manipolazione del DOM e per la gestione della UI in base allo stato, soprattutto senza l’aiuto di framework. L’interfaccia è semplice, chiara e molto veloce.",
-
     repo: "https://github.com/SimoL-003/js-recipes-api",
     liveDemo: "https://simol-003.github.io/js-recipes-api/",
     tech: ["JavaScript", "Fetch API", "HTML", "CSS"],
@@ -77,9 +72,8 @@ const projects = [
     learnings:
       "JavaScript avanzato, logica dei filtri, DOM dinamico, ottimizzazione UI.",
   },
-
   {
-    id: uuidv4(),
+    id: "actors-directory",
     title: "Actors & Actresses Directory",
     imgs: [actorsPreview, actorsFilter],
     caption:
@@ -98,7 +92,6 @@ const projects = [
       "Tailwind",
     ],
     inHome: false,
-
     problem:
       "Mostrare dati complessi da API e fornire un filtro reattivo per nazionalità mantenendo un'esperienza fluida.",
     solution:
@@ -106,9 +99,8 @@ const projects = [
     learnings:
       "Gestione avanzata di useEffect, animazioni con Framer Motion, componente card modulare.",
   },
-
   {
-    id: uuidv4(),
+    id: "movie-app",
     title: "Movie App",
     imgs: [movieAppPreview, movieAppFilter, MovieAppModal],
     caption:
@@ -120,7 +112,6 @@ const projects = [
     liveDemo: "https://react-catalogue-movie-filter.netlify.app/",
     tech: ["React", "useState", "useEffect", "JavaScript", "Tailwind"],
     inHome: true,
-
     problem:
       "Creare un sistema di filtro dinamico e generi autogenerati per una lista complessa di film.",
     solution:

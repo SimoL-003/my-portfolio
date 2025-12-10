@@ -223,3 +223,12 @@
 .projects-grid .card:hover h4 {
   @apply underline underline-offset-4 decoration-2 decoration-accent-primary;
 }
+
+.return-btn {
+  @variant max-lg {
+    @apply underline underline-offset-4 decoration-2 decoration-accent-primary;
+  }
+  @variant hover {
+    @apply underline underline-offset-4 decoration-2 decoration-accent-primary;
+  }
+}

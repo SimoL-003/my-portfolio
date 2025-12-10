@@ -47,7 +47,8 @@ export default function About() {
               Teoria e Tecnologia della Comunicazione
             </strong>
             , la quale però non si è dimostrata essere in linea con le mie
-            aspettative, dunque ho terminato questo percorso dopo il primo anno.
+            aspettative, dunque ho interrotto questo percorso dopo il primo
+            anno.
           </p>
           <p>
             Attualmente sto studiando{" "}

@@ -36,6 +36,7 @@ export default function ProjectCard({
           {/* Buttons */}
           <div className="flex gap-4 pt-8">
             <a
+              onClick={(e) => e.stopPropagation()}
               className="button button--primary px-3 py-2 md:px-4 md:py-3"
               href={linkDemo}
               target="_blank"
@@ -43,6 +44,7 @@ export default function ProjectCard({
               Link Demo
             </a>
             <a
+              onClick={(e) => e.stopPropagation()}
               className="button button--secondary px-3 py-2 md:px-4 md:py-3"
               href={linkRepo}
               target="_blank"
