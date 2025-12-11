@@ -14,9 +14,12 @@ import {
   faCss,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faAngleLeft,
   faAnglesUp,
   faBars,
   faBullseye,
+  faChevronLeft,
+  faChevronRight,
   faEnvelope,
   faGear,
   faGraduationCap,
@@ -35,6 +38,9 @@ export const icons = {
   laptop: faLaptopCode /* computer */,
   target: faBullseye /* target */,
   hobby: faPuzzlePiece /* puzzle piece (hobby) */,
+  return: faAngleLeft /* < */,
+  chevronLeft: faChevronLeft /* chevron left */,
+  chevronRight: faChevronRight /* chevron right */,
 
   // Dev stack
   html: faHtml5,
