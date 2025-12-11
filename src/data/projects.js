@@ -4,13 +4,16 @@ import ecommerceSingleProduct from "../assets/images/projectsPreviews/ecommerce/
 import portfolioPreview from "../assets/images/projectsPreviews/portfolio/portfolio.png";
 import recipesPreview from "../assets/images/projectsPreviews/recipesFilter/recipes.png";
 import recipesFilter from "../assets/images/projectsPreviews/recipesFilter/recipes-filter.png";
+import recipesFilterMobile from "../assets/images/projectsPreviews/recipesFilter/recipes--mobile.png";
 import actorsPreview from "../assets/images/projectsPreviews/actors/actors.png";
 import actorsFilter from "../assets/images/projectsPreviews/actors/actors-filter.png";
 import movieAppPreview from "../assets/images/projectsPreviews/movieApp/movieApp.png";
 import movieAppFilter from "../assets/images/projectsPreviews/movieApp/movieApp-searchFilter.png";
-import MovieAppModal from "../assets/images/projectsPreviews/movieApp/movieApp-modal.png";
+import movieAppFilterNoResult from "../assets/images/projectsPreviews/movieApp/movieApp-searchFilter__no-result.png";
+import movieAppModal from "../assets/images/projectsPreviews/movieApp/movieApp-modal.png";
 
 const projects = [
+  // E-COMMERCE
   {
     id: "e-commerce",
     title: "E-commerce con Budget Mode",
@@ -32,6 +35,7 @@ const projects = [
     learnings:
       "Context API avanzata, React Router, gestione fetch, UX per app complesse, clean code.",
   },
+  // PORTFOLIO
   {
     id: "portfolio",
     title: "Portfolio",
@@ -52,10 +56,11 @@ const projects = [
     learnings:
       "Organizzazione di un progetto su larga scala, UI/UX, animazioni professionali, component design.",
   },
+  // RECIPES FILTER
   {
     id: "recipes-filter",
     title: "Recipes Filter",
-    imgs: [recipesPreview, recipesFilter],
+    imgs: [recipesPreview, recipesFilter, recipesFilterMobile],
     caption:
       "App che mostra ricette provenienti da API esterna con filtri multipli (tag, difficoltà, tipo di piatto e cucina).",
     description:
@@ -72,6 +77,7 @@ const projects = [
     learnings:
       "JavaScript avanzato, logica dei filtri, DOM dinamico, ottimizzazione UI.",
   },
+  // ACTORS DIRECTORY
   {
     id: "actors-directory",
     title: "Actors & Actresses Directory",
@@ -99,10 +105,16 @@ const projects = [
     learnings:
       "Gestione avanzata di useEffect, animazioni con Framer Motion, componente card modulare.",
   },
+  // MOVIE APP
   {
     id: "movie-app",
     title: "Movie App",
-    imgs: [movieAppPreview, movieAppFilter, MovieAppModal],
+    imgs: [
+      movieAppPreview,
+      movieAppFilter,
+      movieAppFilterNoResult,
+      movieAppModal,
+    ],
     caption:
       "App React per filtrare film per genere e titolo, con generi dinamici e possibilità di aggiungere nuovi film.",
     description:

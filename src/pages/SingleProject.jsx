@@ -21,7 +21,7 @@ export default function SingleProject() {
 
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % singleProject.imgs.length);
-    }, 6000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [singleProject]);
@@ -37,11 +37,11 @@ export default function SingleProject() {
   const goNext = () => setCurrent((current + 1) % imgs.length);
 
   return (
-    <section className="py-12 lg:py-20">
+    <section className="pb-14 pt-2 lg:py-20">
       <div className="container">
-        {/* Back */}
+        {/* Back to page */}
         <div>
-          <Link to="/projects" className="return-btn block py-4">
+          <Link to="/projects" className="return-btn block py-4 pr-4 w-fit">
             <FontAwesomeIcon icon={icons.return} /> Ritorna alla lista progetti
           </Link>
         </div>
@@ -52,7 +52,7 @@ export default function SingleProject() {
           {/* SLIDER */}
           <div className="lg:w-1/2 relative">
             <div className="overflow-hidden relative">
-              {/* IMAGES */}
+              {/* Images */}
               <div
                 className="flex transition-transform duration-700 max-h-[500px]"
                 style={{ transform: `translateX(-${current * 100}%)` }}
@@ -67,22 +67,22 @@ export default function SingleProject() {
                 ))}
               </div>
 
-              {/* BUTTONS */}
+              {/* Buttons */}
               <button
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 text-white p-3 rounded-full hover:bg-black/60 transition"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/40 text-white p-3 rounded-full hover:bg-black/60 transition"
                 onClick={goPrev}
               >
                 <FontAwesomeIcon icon={icons.chevronLeft} />
               </button>
 
               <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 text-white p-3 rounded-full hover:bg-black/60 transition"
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/40 text-white p-3 rounded-full hover:bg-black/60 transition"
                 onClick={goNext}
               >
                 <FontAwesomeIcon icon={icons.chevronRight} />
               </button>
 
-              {/* DOTS */}
+              {/* Dots */}
               <div className="absolute bottom-4 w-full flex justify-center gap-2">
                 {imgs.map((_, index) => (
                   <button
@@ -90,7 +90,7 @@ export default function SingleProject() {
                     className={`h-3 w-3 rounded-full transition ${
                       current === index
                         ? "bg-accent-primary scale-110"
-                        : "bg-white/50"
+                        : "bg-text-tertiary"
                     }`}
                     onClick={() => setCurrent(index)}
                   ></button>
@@ -102,23 +102,23 @@ export default function SingleProject() {
           {/* DETAILS */}
           <div className="lg:w-1/2 space-y-8 h-fit">
             <div>
-              <h3 className="text-xl font-semibold mb-2">Descrizione</h3>
-              <p className="text-white/80">{description}</p>
+              <h3 className="mb-2">Descrizione</h3>
+              <p className="text-text-secondary">{description}</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">Obiettivo primario</h3>
-              <p className="text-white/80">{problem}</p>
+              <h3 className="mb-2">Obiettivo primario</h3>
+              <p className="text-text-secondary">{problem}</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">Soluzione</h3>
-              <p className="text-white/80">{solution}</p>
+              <h3 className="mb-2">Soluzione</h3>
+              <p className="text-text-secondary">{solution}</p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-2">Cosa ho imparato</h3>
-              <p className="text-white/80">{learnings}</p>
+              <h3 className="mb-2">Cosa ho imparato</h3>
+              <p className="text-text-secondary">{learnings}</p>
             </div>
           </div>
         </div>
