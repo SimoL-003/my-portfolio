@@ -1,18 +1,9 @@
 import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faReact,
-  faGitAlt,
-  faGithub,
-  faBootstrap,
-  faNodeJs,
   faLinkedin,
   faSquareGithub,
   faDiscord,
-  faFigma,
-  faCss,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faAngleLeft,
   faAnglesUp,
@@ -21,15 +12,28 @@ import {
   faChevronLeft,
   faChevronRight,
   faEnvelope,
-  faGear,
   faGraduationCap,
   faHandshake,
   faLaptopCode,
-  faMobile,
   faPuzzlePiece,
-  faSitemap,
   faSquarePhone,
 } from "@fortawesome/free-solid-svg-icons";
+
+import html from "./stack/html5.svg";
+import css from "./stack/css.svg";
+import javascript from "./stack/javascript.svg";
+import astro from "./stack/astro.svg";
+import bootstrap from "./stack/bootstrap.svg";
+import expressjs from "./stack/expressjs.svg";
+import figma from "./stack/figma.svg";
+import git from "./stack/git.svg";
+import github from "./stack/github.svg";
+import netlify from "./stack/netlify.svg";
+import tailwindcss from "./stack/tailwindcss.svg";
+import vitejs from "./stack/vitejs.svg";
+import react from "./stack/react.svg";
+import api from "./stack/api.svg";
+import responsive from "./stack/responsive.svg";
 
 export const icons = {
   // UI
@@ -45,19 +49,22 @@ export const icons = {
   handsShaking: faHandshake /* hands shaking */,
 
   // Dev stack
-  html: faHtml5,
-  css: faCss3Alt,
-  generalCss: faCss,
-  js: faJs,
-  react: faReact,
-  git: faGitAlt,
-  github: faGithub,
-  bootstrap: faBootstrap,
-  node: faNodeJs,
-  figma: faFigma,
-  responsive: faMobile,
-  generalSettings: faGear,
-  sitemap: faSitemap,
+  html: html,
+  css: css,
+  javascript: javascript,
+  react: react,
+  astro: astro,
+  bootstrap: bootstrap,
+  expressjs: expressjs,
+  git: git,
+  github: github,
+  figma: figma,
+  netlify: netlify,
+  tailwindcss: tailwindcss,
+  vitejs: vitejs,
+  astro: astro,
+  api: api,
+  responsive: responsive,
 
   // Footer
   linkedIn: faLinkedin,
