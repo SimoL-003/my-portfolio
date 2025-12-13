@@ -22,11 +22,8 @@
 
   html,
   body {
-    overflow-x: hidden;
-  }
-
-  body {
     @apply bg-background font-montserrat text-sm text-text-primary font-normal leading-[150%];
+    overflow-x: hidden;
     @variant md {
       @apply text-[0.9375rem];
     }
@@ -38,7 +35,7 @@
   h1 {
     @apply text-4xl font-bold leading-[130%];
     @variant md {
-      @apply text-6xl;
+      @apply text-4xl;
     }
 
     @variant lg {
@@ -107,6 +104,26 @@
   p.body-large {
     @apply text-base md:text-[1.0625rem] lg:text-lg;
   }
+
+  label {
+    @apply text-xs uppercase tracking-widest text-text-tertiary;
+  }
+
+  input {
+    @apply h-13;
+  }
+
+  textarea {
+    @apply py-3;
+  }
+
+  input,
+  textarea {
+    @apply bg-background border border-white/15 px-4 text-sm text-text-primary placeholder:text-text-tertiary transition-all duration-300;
+    @variant focus {
+      @apply outline-none border-accent-primary ring-2 ring-accent-primary;
+    }
+  }
 }
 
 @layer components {
@@ -128,6 +145,14 @@
 
   .label {
     @apply uppercase px-3 py-2 bg-surface-primary text-xs lg:text-sm font-normal leading-[120%] tracking-[1px];
+  }
+
+  .form-card {
+    @apply flex flex-col gap-6 w-full bg-surface-primary border border-white/10 shadow-2xl p-8;
+  }
+
+  .form__input-group {
+    @apply flex flex-col gap-1.5;
   }
 }
 
