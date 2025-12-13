@@ -66,7 +66,7 @@ export default function ContactForm({
       </div>
 
       {/* Submit */}
-      <div className="flex items-center gap-4 pt-2">
+      <div className="flex max-md:items-center flex-col gap-2 pt-2">
         <button
           type="submit"
           className="button button--primary inline-flex items-center justify-center cursor-pointer"
