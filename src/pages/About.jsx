@@ -17,9 +17,9 @@ export default function About() {
             <strong className="text-accent-primary">Front-End Developer</strong>{" "}
             con una forte attenzione alla user experience e al design. Mi piace
             costruire{" "}
-            <span className="text-accent-primary">
+            <strong className="text-accent-primary">
               interfacce semplici, pulite e intuitive
-            </span>
+            </strong>
             , unendo logica e creatività.
           </p>
         </div>
