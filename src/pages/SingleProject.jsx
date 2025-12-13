@@ -28,8 +28,16 @@ export default function SingleProject() {
 
   if (!singleProject) return null;
 
-  const { title, imgs, description, problem, solution, learnings } =
-    singleProject;
+  const {
+    title,
+    imgs,
+    description,
+    problem,
+    solution,
+    learnings,
+    liveDemo,
+    repo,
+  } = singleProject;
 
   const goPrev = () =>
     setCurrent(current === 0 ? imgs.length - 1 : current - 1);
@@ -37,7 +45,7 @@ export default function SingleProject() {
   const goNext = () => setCurrent((current + 1) % imgs.length);
 
   return (
-    <section className="pb-14 pt-2 lg:py-20">
+    <section className="pb-14 pt-2 lg:pb-20 lg:t-14">
       <div className="container">
         {/* Back to page */}
         <div>
@@ -51,7 +59,7 @@ export default function SingleProject() {
         <div className="flex flex-col lg:flex-row gap-10">
           {/* SLIDER */}
           <div className="lg:w-1/2 relative">
-            <div className="overflow-hidden relative">
+            <div className="overflow-x-hidden relative h-full flex items-center">
               {/* Images */}
               <div
                 className="flex transition-transform duration-700 max-h-[500px]"
@@ -121,6 +129,24 @@ export default function SingleProject() {
               <p className="text-text-secondary">{learnings}</p>
             </div>
           </div>
+        </div>
+
+        {/* BUTTONS */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
+          <a
+            className="button button--primary px-3 py-2 sm:px-4 sm:py-3"
+            href={liveDemo}
+            target="_blank"
+          >
+            Live Demo
+          </a>
+          <a
+            className="button button--secondary px-3 py-2 sm:px-4 sm:py-3"
+            href={repo}
+            target="_blank"
+          >
+            Github Repo
+          </a>
         </div>
       </div>
     </section>
