@@ -41,7 +41,7 @@ export default function ProjectCard({
               href={linkDemo}
               target="_blank"
             >
-              Link Demo
+              Live Demo
             </a>
             <a
               onClick={(e) => e.stopPropagation()}
