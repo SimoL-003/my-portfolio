@@ -23,6 +23,7 @@ import {
   faEnvelope,
   faGear,
   faGraduationCap,
+  faHandshake,
   faLaptopCode,
   faMobile,
   faPuzzlePiece,
@@ -41,6 +42,7 @@ export const icons = {
   return: faAngleLeft /* < */,
   chevronLeft: faChevronLeft /* chevron left */,
   chevronRight: faChevronRight /* chevron right */,
+  handsShaking: faHandshake /* hands shaking */,
 
   // Dev stack
   html: faHtml5,
