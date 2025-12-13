@@ -21,7 +21,7 @@ const projects = [
     caption:
       "Pagina prodotti di un e-commerce progettata e sviluppata da zero. Include un Budget Mode che permette all’utente di impostare un limite di spesa e filtrare i prodotti di conseguenza.",
     description:
-      "Questo progetto nasce con l’obiettivo di creare una pagina prodotti di un e-commerce completamente funzionale, con routing interno e una gestione dello stato scalabile. L’aspetto più interessante è la Budget Mode: l’utente può impostare un limite di spesa e il sistema filtra automaticamente i prodotti, suggerendo solo quelli compatibili. Ho gestito lo stato globale con la Context API, implementato pagine dinamiche con React Router e strutturato la UI con un design modulare. Il progetto include anche una singola pagina prodotto, il calcolo dei prezzi e una user experience molto pulita e immediata.",
+      "Questo progetto nasce con l’obiettivo di creare una pagina prodotti di un e-commerce completamente funzionale, con routing interno e una gestione dello stato scalabile. L’aspetto più interessante è la Budget Mode: l’utente può impostare un limite di spesa e il sistema filtra automaticamente i prodotti, suggerendo solo quelli compatibili. Ho gestito lo stato globale con la Context API, implementato pagine dinamiche con React Router e strutturato la UI con un design modulare. Il progetto include anche una pagina per ogni singolo prodotto, con navigazione tra il prodotto successivo e il precedente.",
 
     repo: "https://github.com/SimoL-003/react-context-api",
     liveDemo: "https://react-fake-store-sl.netlify.app",
@@ -64,7 +64,7 @@ const projects = [
     caption:
       "App che mostra ricette provenienti da API esterna con filtri multipli (tag, difficoltà, tipo di piatto e cucina).",
     description:
-      "Recipes Filter è un progetto JavaScript in cui ho voluto lavorare sulla logica pura: fetch API, rendering dinamico e filtri multipli combinati. L'app permette di visualizzare ricette e applicare filtri simultanei per tipologia, cucina, difficoltà e tag. Ogni aggiornamento del filtro ricalcola la lista in tempo reale. È un'ottima palestra per la manipolazione del DOM e per la gestione della UI in base allo stato, soprattutto senza l’aiuto di framework. L’interfaccia è semplice, chiara e molto veloce.",
+      "Recipes Filter è un progetto JavaScript in cui ho voluto lavorare sulla logica pura: fetch API, rendering dinamico e filtri multipli combinati. L'app permette di visualizzare ricette e applicare filtri per tipologia, cucina, difficoltà e tag. Sebbene non rispecchi un reale utilizzo dei filtri API, è un'ottima palestra per la manipolazione del DOM e per la gestione della UI in base allo stato, soprattutto senza l’aiuto di framework. L’interfaccia è semplice, chiara e molto veloce.",
     repo: "https://github.com/SimoL-003/js-recipes-api",
     liveDemo: "https://simol-003.github.io/js-recipes-api/",
     tech: ["JavaScript", "Fetch API", "HTML", "CSS"],
@@ -118,18 +118,18 @@ const projects = [
     caption:
       "App React per filtrare film per genere e titolo, con generi dinamici e possibilità di aggiungere nuovi film.",
     description:
-      "Movie App permette di filtrare film per genere, titolo e aggiungerne di nuovi. I generi vengono generati automaticamente analizzando i film esistenti, così non devono essere inseriti manualmente. Ho curato la logica del filtraggio, la gestione dello stato, il form per aggiungere un nuovo film e la creazione di una UI semplice ma funzionale. Il progetto è ottimo per mostrare padronanza di useState, array complessi, form handling e UI reattiva.",
+      'Movie App permette di filtrare film per genere, titolo e aggiungerne di nuovi. I generi del filtro vengono generati automaticamente analizzando i film esistenti, così non devono essere inseriti manualmente. Ho curato la logica del filtraggio, la gestione dello statoe la creazione di una UI semplice ma funzionale. Il form per aggiungere nuovi film ha un input per il titolo e un select per il genere (selezionando la voce "Altro" si apre un nuovo input per inserire un genere personalizzato) Il progetto è ottimo per mostrare padronanza di useState, array complessi, form handling e UI reattiva.',
 
     repo: "https://github.com/SimoL-003/react-movie-filter",
     liveDemo: "https://react-catalogue-movie-filter.netlify.app/",
     tech: ["React", "useState", "useEffect", "JavaScript", "Tailwind"],
-    inHome: true,
+    inHome: false,
     problem:
       "Creare un sistema di filtro dinamico e generi autogenerati per una lista complessa di film.",
     solution:
       "Ho sviluppato una UI con filtri, ricerca, aggiunta film e generi calcolati automaticamente.",
     learnings:
-      "useState avanzato, gestione array complessi, form handling, sincronizzazione UI-dati.",
+      "useState avanzato, gestione array complessi, form handling, sincronizzazione UI-dati",
   },
 ];
 

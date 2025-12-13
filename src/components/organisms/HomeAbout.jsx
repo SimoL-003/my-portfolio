@@ -38,7 +38,7 @@ export default function HomeAbout() {
                   key={index}
                   className="label flex items-center gap-2 h-8.5 lg:h-9.25"
                 >
-                  <FontAwesomeIcon icon={icon} size="xl" />
+                  <img src={icon} alt={title} className="w-5" />
                   <span>{title}</span>
                 </div>
               ))}
