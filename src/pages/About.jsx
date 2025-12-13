@@ -16,8 +16,11 @@ export default function About() {
             un aspirante{" "}
             <strong className="text-accent-primary">Front-End Developer</strong>{" "}
             con una forte attenzione alla user experience e al design. Mi piace
-            costruire interfacce semplici, pulite e intuitive, unendo logica e
-            creatività.
+            costruire{" "}
+            <strong className="text-accent-primary">
+              interfacce semplici, pulite e intuitive
+            </strong>
+            , unendo logica e creatività.
           </p>
         </div>
       </section>
@@ -38,18 +41,19 @@ export default function About() {
             corso di laurea mi ha permesso di avvicinarmi allo sviluppo web, che
             mi ha sin da subito appassionato.
           </p>
-          <p>
+          {/* <p>
             Ho deciso così di proseguire con una Laurea Magistrale in{" "}
             <strong className="text-accent-primary">
               Teoria e Tecnologia della Comunicazione
             </strong>
             , la quale però non si è dimostrata essere in linea con le mie
-            aspettative, dunque ho terminato questo percorso dopo il primo anno.
-          </p>
+            aspettative, dunque ho interrotto questo percorso dopo il primo
+            anno.
+          </p> */}
           <p>
-            Attualmente sto studiando{" "}
+            Ho quindi deciso di proseguire gli studi con un master in{" "}
             <strong className="text-accent-primary">Web Developing</strong>{" "}
-            presso Boolean.
+            presso Boolean, che sto attualmente frequentando.
           </p>
         </AboutSection>
 

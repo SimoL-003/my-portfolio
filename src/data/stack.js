@@ -15,7 +15,7 @@ const stack = [
   },
   {
     title: "JavaScript",
-    icon: icons.js,
+    icon: icons.javascript,
     type: "core",
   },
   {
@@ -34,23 +34,28 @@ const stack = [
     type: "tool",
   },
   {
-    title: "Express JS",
-    icon: icons.node,
+    title: "Express.js",
+    icon: icons.expressjs,
+    type: "core",
+  },
+  {
+    title: "Astro",
+    icon: icons.astro,
     type: "core",
   },
   {
     title: "RESTful API",
-    icon: icons.generalSettings,
+    icon: icons.api,
     type: "other",
   },
   {
-    title: "Bootstrap CSS",
+    title: "Bootstrap",
     icon: icons.bootstrap,
     type: "tool",
   },
   {
-    title: "Tailwind CSS",
-    icon: icons.generalCss,
+    title: "Tailwind",
+    icon: icons.tailwindcss,
     type: "tool",
   },
   {
@@ -60,7 +65,7 @@ const stack = [
   },
   {
     title: "Netlify",
-    icon: icons.sitemap,
+    icon: icons.netlify,
     type: "tool",
   },
   {
