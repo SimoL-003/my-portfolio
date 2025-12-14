@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../assets/icons/icons";
+import { motion } from "motion/react";
 
 export default function SingleProject() {
   const { id } = useParams();
@@ -45,7 +46,11 @@ export default function SingleProject() {
   const goNext = () => setCurrent((current + 1) % imgs.length);
 
   return (
-    <section className="pb-14 pt-2 lg:pb-20 lg:t-14">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="pb-14 pt-2 lg:pb-20 lg:t-14"
+    >
       <div className="container">
         {/* Back to page */}
         <div>
@@ -149,6 +154,6 @@ export default function SingleProject() {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
