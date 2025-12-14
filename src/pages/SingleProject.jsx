@@ -137,20 +137,20 @@ export default function SingleProject() {
         </div>
 
         {/* BUTTONS */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-          <a
-            className="button button--primary px-3 py-2 sm:px-4 sm:py-3"
-            href={liveDemo}
-            target="_blank"
-          >
-            Live Demo
-          </a>
+        <div className="flex sm:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
           <a
             className="button button--secondary px-3 py-2 sm:px-4 sm:py-3"
             href={repo}
             target="_blank"
           >
             Github Repo
+          </a>
+          <a
+            className="button button--primary px-3 py-2 sm:px-4 sm:py-3"
+            href={liveDemo}
+            target="_blank"
+          >
+            Live Demo
           </a>
         </div>
       </div>
