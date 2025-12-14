@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { stack } from "../../data/stack";
 
 export default function HomeAbout() {

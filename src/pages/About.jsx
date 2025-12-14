@@ -1,7 +1,5 @@
 import { icons } from "../assets/icons/icons";
 import AboutSection from "../components/molecules/AboutSection";
-import { core, tools } from "../data/stack";
-import StackList from "../components/molecules/StackList";
 import StackSection from "../components/organisms/StackSection";
 import { motion } from "motion/react";
 
