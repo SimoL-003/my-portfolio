@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ProjectCard from "../components/molecules/ProjectCard";
 import { projects } from "../data/projects";
 import { motion } from "motion/react";
