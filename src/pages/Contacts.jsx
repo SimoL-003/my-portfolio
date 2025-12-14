@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ContactForm from "../components/organisms/ContactForm";
+import { motion } from "motion/react";
 
 export default function Contacts() {
   const initialFormData = {
@@ -20,7 +21,11 @@ export default function Contacts() {
   }
 
   return (
-    <section className="min-h-[calc(100vh-310.5px)] flex">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="min-h-[calc(100vh-310.5px)] flex"
+    >
       <div className="container flex flex-col md:flex-row">
         {/* CTA */}
         <div className="w-full md:w-2/5 h-fit self-center pt-12">
@@ -42,6 +47,6 @@ export default function Contacts() {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

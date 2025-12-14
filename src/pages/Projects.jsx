@@ -1,12 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
 import ProjectCard from "../components/molecules/ProjectCard";
 import { projects } from "../data/projects";
+import { motion } from "motion/react";
 
 export default function Projects() {
   const navigate = useNavigate();
 
   return (
-    <section>
+    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {/* HEADING */}
       <hgroup className="pt-12 lg:pt-20">
         <div className="container">
@@ -43,6 +44,6 @@ export default function Projects() {
           </div>
         </div>
       </section>
-    </section>
+    </motion.section>
   );
 }

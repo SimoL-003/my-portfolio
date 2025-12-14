@@ -3,10 +3,15 @@ import AboutSection from "../components/molecules/AboutSection";
 import { core, tools } from "../data/stack";
 import StackList from "../components/molecules/StackList";
 import StackSection from "../components/organisms/StackSection";
+import { motion } from "motion/react";
 
 export default function About() {
   return (
-    <section className="mb-16">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="mb-16"
+    >
       {/* CHI SONO */}
       <section className="text-center py-12 lg:py-20">
         <div className="container">
@@ -119,6 +124,6 @@ export default function About() {
           </p>
         </AboutSection>
       </div>
-    </section>
+    </motion.section>
   );
 }
