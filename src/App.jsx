@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 import BaseLayout from "./components/layouts/BaseLayout";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import SingleProject from "./pages/SingleProject";
-import HomePage from "./pages/Home/HomePage";
+import HomePage from "./pages/Home/Home";
 import AboutPage from "./pages/About/About";
 import ProjectsPage from "./pages/Projects/Projects";
+import ContactsPage from "./pages/Contacts/Contacts";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
               <Route path={""} element={<ProjectsPage />} />
               <Route path=":id" element={<SingleProject />} />
             </Route>
-            <Route path={"contacts"} element={<Contacts />} />
+            <Route path={"contacts"} element={<ContactsPage />} />
             <Route path={"*"} element={<NotFound />} />
           </Route>
         </Routes>
