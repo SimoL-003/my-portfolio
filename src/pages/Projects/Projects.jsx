@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import ProjectGrid from "../components/organisms/ProjectsGrid";
+import ProjectGrid from "./ProjectsGrid";
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       {/* HEADING */}
