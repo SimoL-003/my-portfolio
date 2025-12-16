@@ -44,6 +44,11 @@ const stack = [
     type: "core",
   },
   {
+    title: "Vite",
+    icon: icons.vitejs,
+    type: "tool",
+  },
+  {
     title: "RESTful API",
     icon: icons.api,
     type: "other",
