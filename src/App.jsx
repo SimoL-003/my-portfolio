@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
@@ -7,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import BaseLayout from "./components/layouts/BaseLayout";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import SingleProject from "./pages/SingleProject";
+import Home from "./pages/Home/HomePage";
 
 function App() {
   return (
