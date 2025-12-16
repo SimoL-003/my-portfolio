@@ -1,9 +1,9 @@
-import { icons } from "../assets/icons/icons";
-import AboutSection from "../components/molecules/AboutSection";
-import StackSection from "../components/organisms/StackSection";
+import { icons } from "../../assets/icons/icons";
+import AboutSection from "./AboutSection";
+import StackSection from "./Stack/StackSection";
 import { motion } from "motion/react";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <motion.section
       initial={{ opacity: 0 }}

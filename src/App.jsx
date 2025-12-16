@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 import BaseLayout from "./components/layouts/BaseLayout";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import SingleProject from "./pages/SingleProject";
-import Home from "./pages/Home/HomePage";
+import HomePage from "./pages/Home/HomePage";
+import AboutPage from "./pages/About/About";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route element={<BaseLayout />}>
-            <Route index element={<Home />} />
-            <Route path={"about-me"} element={<About />} />
+            <Route index element={<HomePage />} />
+            <Route path={"about-me"} element={<AboutPage />} />
             <Route path={"projects"}>
               <Route path={""} element={<Projects />} />
               <Route path=":id" element={<SingleProject />} />
