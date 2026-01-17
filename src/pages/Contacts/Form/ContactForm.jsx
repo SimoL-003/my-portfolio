@@ -4,7 +4,7 @@ export default function ContactForm({
   formData,
 }) {
   return (
-    <form className="form-card" onSubmit={handleSubmit} netlify>
+    <form className="form-card" /* onSubmit={handleSubmit} */ netlify>
       {/* Nome / Azienda */}
       <div className="form__input-group">
         <label htmlFor="name">Nome / Azienda</label>
