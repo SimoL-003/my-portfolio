@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import StarField from "../molecules/StarField";
+import StarField from "./StarField";
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
             <span className="block mt-4">Sono uno sviluppatore web.</span>
           </h1>
 
-          {/* Button gropu */}
+          {/* Button group */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
             <Link
               to={"/contacts"}

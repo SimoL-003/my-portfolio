@@ -1,5 +1,5 @@
-import StackList from "../molecules/StackList";
-import { core, tools, others } from "../../data/stack";
+import StackList from "./StackList";
+import { core, tools, others } from "../../../data/stack";
 
 export default function StackSection() {
   return (

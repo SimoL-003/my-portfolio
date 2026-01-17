@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icons } from "../../assets/icons/icons";
 
-export default function SingleProjectSlider({ imgs, current, setCurrent }) {
+export default function SliderSection({ imgs, current, setCurrent }) {
   const goPrev = () =>
     setCurrent(current === 0 ? imgs.length - 1 : current - 1);
 

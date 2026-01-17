@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { projects } from "../../data/projects";
-import ProjectCard from "../molecules/ProjectCard";
+import ProjectCard from "../../components/molecules/ProjectCard";
 
 export default function ProjectGrid() {
   const navigate = useNavigate();
