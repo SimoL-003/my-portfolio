@@ -39,6 +39,11 @@ const stack = [
     type: "core",
   },
   {
+    title: "MySQL",
+    icon: icons.mysql,
+    type: "core",
+  },
+  {
     title: "Astro",
     icon: icons.astro,
     type: "core",
