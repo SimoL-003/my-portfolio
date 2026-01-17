@@ -20,7 +20,7 @@ export default function FormSection() {
   }
 
   return (
-    <div className="md:w-3/5 py-12 lg:py-20 md:pl-30 xl:pl-52">
+    <div className="md:w-3/5 py-12 lg:py-16 md:pl-30 xl:pl-52">
       <ContactForm
         handleSubmit={handleSubmit}
         handleInputChange={handleInputChange}
