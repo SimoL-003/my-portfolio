@@ -1,11 +1,10 @@
-import { icons } from "../assets/icons/icons";
-import AboutSection from "../components/molecules/AboutSection";
-import { core, tools } from "../data/stack";
-import StackList from "../components/molecules/StackList";
-import StackSection from "../components/organisms/StackSection";
+import { Link } from "react-router-dom";
+import { icons } from "../../assets/icons/icons";
+import AboutSection from "./AboutSection";
+import StackSection from "./Stack/StackSection";
 import { motion } from "motion/react";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -123,6 +122,12 @@ export default function About() {
             .
           </p>
         </AboutSection>
+      </div>
+
+      <div className="text-center pt-8">
+        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+          Entriamo in contatto
+        </Link>
       </div>
     </motion.section>
   );

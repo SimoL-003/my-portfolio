@@ -1,4 +1,4 @@
-import StackItem from "../atoms/StackItem";
+import StackItem from "./StackItem";
 
 export default function StackList({ items }) {
   return (

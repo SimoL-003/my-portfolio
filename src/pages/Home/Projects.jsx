@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { homeProjects } from "../../data/projects";
-import ProjectCard from "../molecules/ProjectCard";
+import ProjectCard from "../../components/molecules/ProjectCard";
 
-export default function HomeProjects() {
+export default function ProjectsSection() {
   return (
     <section id="projects-preview" className="py-12 lg:py-20">
       <div className="container">

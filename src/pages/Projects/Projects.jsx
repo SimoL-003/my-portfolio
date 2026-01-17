@@ -1,0 +1,29 @@
+import { motion } from "motion/react";
+import ProjectGrid from "./ProjectsGrid";
+import { Link } from "react-router-dom";
+
+export default function ProjectsPage() {
+  return (
+    <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+      {/* HEADING */}
+      <hgroup className="pt-12 lg:pt-20">
+        <div className="container">
+          <h1>I miei progetti</h1>
+          <h2 className="subtitle mt-4 text-base md:text-lg max-w-prose text-text-primary/70">
+            Una raccolta dei progetti che ho sviluppato durante il mio percorso
+            di formazione come Web Developer.
+          </h2>
+        </div>
+      </hgroup>
+
+      {/* PROJECT GRID */}
+      <ProjectGrid />
+
+      <div className="text-center pb-16">
+        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+          Entriamo in contatto
+        </Link>
+      </div>
+    </motion.section>
+  );
+}

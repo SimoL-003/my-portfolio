@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function StackItem({ title, icon }) {
   return (
     <li className="flex flex-col items-center transition-all hover:scale-105">
