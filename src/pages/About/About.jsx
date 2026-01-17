@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { icons } from "../../assets/icons/icons";
 import AboutSection from "./AboutSection";
 import StackSection from "./Stack/StackSection";
@@ -121,6 +122,12 @@ export default function AboutPage() {
             .
           </p>
         </AboutSection>
+      </div>
+
+      <div className="text-center pt-8">
+        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+          Entriamo in contatto
+        </Link>
       </div>
     </motion.section>
   );

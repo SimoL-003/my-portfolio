@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ProjectGrid from "./ProjectsGrid";
+import { Link } from "react-router-dom";
 
 export default function ProjectsPage() {
   return (
@@ -17,6 +18,12 @@ export default function ProjectsPage() {
 
       {/* PROJECT GRID */}
       <ProjectGrid />
+
+      <div className="text-center pb-16">
+        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+          Entriamo in contatto
+        </Link>
+      </div>
     </motion.section>
   );
 }
