@@ -39,9 +39,17 @@ export default function Projects() {
                     tech={tech}
                   />
                 </div>
-              )
+              ),
             )}
           </div>
+        </div>
+        <div className="text-center pt-8">
+          <Link
+            to={"/contacts"}
+            className="button button--primary max-md:w-full"
+          >
+            Entriamo in contatto
+          </Link>
         </div>
       </section>
     </motion.section>

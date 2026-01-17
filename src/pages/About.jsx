@@ -4,6 +4,7 @@ import { core, tools } from "../data/stack";
 import StackList from "../components/molecules/StackList";
 import StackSection from "../components/organisms/StackSection";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -123,6 +124,12 @@ export default function About() {
             .
           </p>
         </AboutSection>
+      </div>
+
+      <div className="text-center">
+        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+          Contattami
+        </Link>
       </div>
     </motion.section>
   );
