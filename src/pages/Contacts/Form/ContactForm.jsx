@@ -4,7 +4,19 @@ export default function ContactForm({
   formData,
 }) {
   return (
-    <form className="form-card" /* onSubmit={handleSubmit} */ netlify>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      className="form-card"
+    >
+      <input type="hidden" name="form-name" value="contact" />
+      <p hidden>
+        <label>
+          Don't fill this out: <input name="bot-field" />
+        </label>
+      </p>
       {/* Nome / Azienda */}
       <div className="form__input-group">
         <label htmlFor="name">Nome / Azienda</label>
