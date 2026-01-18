@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import StackSection from "./Stack";
 import BioSection from "./Bio";
+import simo from "../../../assets/images/me/img-me.jpg";
 
 export default function AboutSection() {
   return (
@@ -11,7 +12,7 @@ export default function AboutSection() {
         <div className="flex items-center justify-center">
           {/* Image container */}
           <div className="hidden lg:block lg:w-1/3 lg:p-4">
-            <img src="https://placehold.co/300x400" alt="Simone Leuzzi" />
+            <img src={simo} alt="Simone Leuzzi" />
           </div>
 
           {/* Text container */}
