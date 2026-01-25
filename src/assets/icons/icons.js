@@ -34,6 +34,11 @@ import vitejs from "./stack/vitejs.svg";
 import react from "./stack/react.svg";
 import api from "./stack/api.svg";
 import responsive from "./stack/responsive.svg";
+import mysql from "./stack/mysql.svg";
+import npm from "./stack/npm.svg";
+import reactrouter from "./stack/reactrouter.svg";
+import vscode from "./stack/vscode.svg";
+import cleancode from "./stack/cleancode.svg";
 
 export const icons = {
   // UI
@@ -62,9 +67,13 @@ export const icons = {
   netlify: netlify,
   tailwindcss: tailwindcss,
   vitejs: vitejs,
-  astro: astro,
   api: api,
   responsive: responsive,
+  mysql: mysql,
+  npm: npm,
+  reactrouter: reactrouter,
+  vscode: vscode,
+  cleancode: cleancode,
 
   // Footer
   linkedIn: faLinkedin,

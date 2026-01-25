@@ -39,14 +39,24 @@ const stack = [
     type: "core",
   },
   {
-    title: "Astro",
-    icon: icons.astro,
+    title: "MySQL",
+    icon: icons.mysql,
+    type: "core",
+  },
+  {
+    title: "React Router",
+    icon: icons.reactrouter,
     type: "core",
   },
   {
     title: "RESTful API",
     icon: icons.api,
     type: "other",
+  },
+  {
+    title: "Astro",
+    icon: icons.astro,
+    type: "core",
   },
   {
     title: "Bootstrap",
@@ -56,6 +66,11 @@ const stack = [
   {
     title: "Tailwind",
     icon: icons.tailwindcss,
+    type: "tool",
+  },
+  {
+    title: "Vite",
+    icon: icons.vitejs,
     type: "tool",
   },
   {
@@ -69,9 +84,24 @@ const stack = [
     type: "tool",
   },
   {
+    title: "npm",
+    icon: icons.npm,
+    type: "tool",
+  },
+  {
+    title: "VS Code",
+    icon: icons.vscode,
+    type: "tool",
+  },
+  {
     title: "Figma",
     icon: icons.figma,
     type: "tool",
+  },
+  {
+    title: "Clean Code",
+    icon: icons.cleancode,
+    type: "other",
   },
 ];
 
