@@ -89,6 +89,11 @@ const stack = [
     type: "tool",
   },
   {
+    title: "Git Workflow",
+    icon: icons.gitworkflow,
+    type: "other",
+  },
+  {
     title: "VS Code",
     icon: icons.vscode,
     type: "tool",
