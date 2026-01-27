@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       <ProjectGrid />
 
       <div className="text-center pb-16">
-        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+        <Link to={"/contacts"} className="button button--primary">
           Entriamo in contatto
         </Link>
       </div>

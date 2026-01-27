@@ -125,7 +125,7 @@ export default function AboutPage() {
       </div>
 
       <div className="text-center pt-8">
-        <Link to={"/contacts"} className="button button--primary max-md:w-full">
+        <Link to={"/contacts"} className="button button--primary">
           Entriamo in contatto
         </Link>
       </div>
