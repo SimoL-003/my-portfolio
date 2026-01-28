@@ -3,6 +3,7 @@ import { icons } from "../../assets/icons/icons";
 import AboutSection from "./AboutSection";
 import StackSection from "./Stack/StackSection";
 import { motion } from "motion/react";
+import Button from "../../components/atoms/Button";
 
 export default function AboutPage() {
   return (
@@ -125,9 +126,7 @@ export default function AboutPage() {
       </div>
 
       <div className="text-center pt-8">
-        <Link to={"/contacts"} className="button button--primary">
-          Entriamo in contatto
-        </Link>
+        <Button to="/contacts">Entriamo in contatto</Button>
       </div>
     </motion.section>
   );
