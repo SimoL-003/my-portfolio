@@ -1,3 +1,5 @@
+import Button from "../atoms/Button";
+
 export default function ProjectCard({
   title,
   caption,
@@ -35,22 +37,23 @@ export default function ProjectCard({
 
           {/* Buttons */}
           <div className="flex gap-4 pt-8">
-            <a
-              onClick={(e) => e.stopPropagation()}
-              className="button button--primary px-3 py-2 md:px-4 md:py-3"
+            <Button
               href={linkDemo}
+              onClick={(e) => e.stopPropagation()}
+              className="px-3 py-2 md:px-4 md:py-3"
               target="_blank"
             >
               Live Demo
-            </a>
-            <a
-              onClick={(e) => e.stopPropagation()}
-              className="button button--secondary px-3 py-2 md:px-4 md:py-3"
+            </Button>
+            <Button
               href={linkRepo}
+              onClick={(e) => e.stopPropagation()}
+              variant="secondary"
+              className="px-3 py-2 md:px-4 md:py-3"
               target="_blank"
             >
               Github Repo
-            </a>
+            </Button>
           </div>
         </div>
       </div>

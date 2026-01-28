@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { homeProjects } from "../../data/projects";
 import ProjectCard from "../../components/molecules/ProjectCard";
+import Button from "../../components/atoms/Button";
 
 export default function ProjectsSection() {
   return (
@@ -23,21 +24,18 @@ export default function ProjectsSection() {
                 img={imgs[0]}
                 tech={tech}
               />
-            )
+            ),
           )}
         </div>
 
         {/* BUTTONS */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-          <Link
-            to={"/contacts"}
-            className="button button--primary max-md:w-full text-center"
-          >
+          <Button to="/contacts" className="max-md:w-full">
             Contattami
-          </Link>
-          <Link to={"/projects"} className="button button--secondary">
+          </Button>
+          <Button to="/projects" variant="secondary">
             Guarda tutti i progetti
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

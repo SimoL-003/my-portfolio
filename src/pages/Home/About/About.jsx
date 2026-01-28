@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import StackSection from "./Stack";
 import BioSection from "./Bio";
 import simo from "../../../assets/images/me/img-me.jpg";
+import Button from "../../../components/atoms/Button";
 
 export default function AboutSection() {
   return (
@@ -21,9 +22,9 @@ export default function AboutSection() {
 
             <StackSection />
 
-            <Link className="button button--primary mt-8" to={"/about-me"}>
+            <Button to="/about-me" className="mt-8">
               Scopri di più
-            </Link>
+            </Button>
           </div>
         </div>
       </div>
