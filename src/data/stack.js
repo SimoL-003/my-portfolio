@@ -26,7 +26,7 @@ const stack = [
   {
     title: "Git",
     icon: icons.git,
-    type: "tool",
+    type: "core",
   },
   {
     title: "GitHub",
@@ -96,6 +96,11 @@ const stack = [
   {
     title: "VS Code",
     icon: icons.vscode,
+    type: "tool",
+  },
+  {
+    title: "Motion",
+    icon: icons.motion,
     type: "tool",
   },
   {

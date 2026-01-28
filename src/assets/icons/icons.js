@@ -40,6 +40,7 @@ import reactrouter from "./stack/reactrouter.svg";
 import vscode from "./stack/vscode.svg";
 import cleancode from "./stack/cleancode.svg";
 import gitworkflow from "./stack/gitworkflow.svg";
+import motion from "./stack/motion.svg";
 
 export const icons = {
   // UI
@@ -76,6 +77,7 @@ export const icons = {
   vscode: vscode,
   cleancode: cleancode,
   gitworkflow: gitworkflow,
+  motion: motion,
 
   // Footer
   linkedIn: faLinkedin,
