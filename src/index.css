@@ -128,7 +128,7 @@
 
 @layer components {
   .button {
-    @apply text-sm lg:text-base font-medium leading-[120%] px-5 py-3 md:px-6 md:py-4;
+    @apply text-sm text-center lg:text-base font-medium leading-[120%] px-5 py-3 md:px-6 md:py-4;
   }
 
   .button--primary {

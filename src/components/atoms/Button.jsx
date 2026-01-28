@@ -39,7 +39,8 @@ export default function Button({
   return (
     <Component
       href={href}
-      disabled={!href && disabled}
+      to={to}
+      disabled={!to && !href && disabled}
       className={getButtonClasses({ variant, disabled, className })}
       {...props}
     >

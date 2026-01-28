@@ -18,21 +18,12 @@ export default function Hero() {
 
           {/* Button group */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-            <Button to={"/contacts"} className={"max-md:w-full"}>
+            <Button to="/contacts" className="max-md:w-full">
               Entriamo in contatto
             </Button>
             <Button href="#projects-preview" variant="secondary">
               Dai un'occhiata ai miei lavori
             </Button>
-            {/* <Link
-              to={"/contacts"}
-              className="button button--primary max-md:w-full"
-            >
-              Entriamo in contatto
-            </Link> */}
-            {/* <a href="#projects-preview" className="button button--secondary">
-              Dai un'occhiata ai miei lavori
-            </a> */}
           </div>
         </div>
       </div>

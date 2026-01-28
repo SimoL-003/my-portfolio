@@ -1,3 +1,5 @@
+import Button from "../../../components/atoms/Button";
+
 export default function ContactForm({
   handleSubmit,
   handleInputChange,
@@ -79,12 +81,12 @@ export default function ContactForm({
 
       {/* Submit */}
       <div className="flex max-md:items-center flex-col gap-2 pt-2">
-        <button
+        <Button
           type="submit"
-          className="button button--primary inline-flex items-center justify-center cursor-pointer"
+          className="inline-flex items-center justify-center cursor-pointer"
         >
           Invia messaggio
-        </button>
+        </Button>
 
         <span className="text-xs text-text-tertiary">
           Rispondo solitamente entro 24 ore

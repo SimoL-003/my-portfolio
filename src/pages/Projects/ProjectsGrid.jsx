@@ -25,7 +25,7 @@ export default function ProjectGrid() {
                   tech={tech}
                 />
               </div>
-            )
+            ),
           )}
         </div>
       </div>
