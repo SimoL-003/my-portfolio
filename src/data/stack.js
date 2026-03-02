@@ -53,11 +53,11 @@ const stack = [
     icon: icons.api,
     type: "other",
   },
-  {
-    title: "Astro",
-    icon: icons.astro,
-    type: "core",
-  },
+  // {
+  //   title: "Astro",
+  //   icon: icons.astro,
+  //   type: "core",
+  // },
   {
     title: "Bootstrap",
     icon: icons.bootstrap,
