@@ -6,6 +6,7 @@ import { icons } from "../../assets/icons/icons";
 import { motion } from "motion/react";
 import SliderSection from "./Slider";
 import DetailsSection from "./Details";
+import Button from "../../components/atoms/Button";
 
 export default function SingleProjectPage() {
   const { id } = useParams();
@@ -65,20 +66,23 @@ export default function SingleProjectPage() {
 
           {/* BUTTONS */}
           <div className="flex sm:flex-row items-center justify-center gap-4 mt-10 w-fit mx-auto">
-            <a
-              className="button button--secondary px-3 py-2 sm:px-4 sm:py-3"
-              href={repo}
+            <Button
+              href={liveDemo !== "" ? liveDemo : null}
+              className="px-3 py-2 sm:px-4 sm:py-3"
               target="_blank"
-            >
-              Github Repo
-            </a>
-            <a
-              className="button button--primary px-3 py-2 sm:px-4 sm:py-3"
-              href={liveDemo}
-              target="_blank"
+              disabled={liveDemo === ""}
             >
               Live Demo
-            </a>
+            </Button>
+            <Button
+              href={repo !== "" ? repo : null}
+              className="px-3 py-2 sm:px-4 sm:py-3"
+              target="_blank"
+              disabled={repo === ""}
+              variant="secondary"
+            >
+              Github Repo
+            </Button>
           </div>
         </section>
       </div>

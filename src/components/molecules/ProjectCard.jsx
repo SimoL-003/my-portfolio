@@ -38,19 +38,21 @@ export default function ProjectCard({
           {/* Buttons */}
           <div className="flex gap-4 pt-8">
             <Button
-              href={linkDemo}
+              href={linkDemo !== "" ? linkDemo : null}
               onClick={(e) => e.stopPropagation()}
               className="px-3 py-2 md:px-4 md:py-3"
               target="_blank"
+              disabled={linkDemo === ""}
             >
               Live Demo
             </Button>
             <Button
-              href={linkRepo}
+              href={linkRepo !== "" ? linkRepo : null}
               onClick={(e) => e.stopPropagation()}
               variant="secondary"
               className="px-3 py-2 md:px-4 md:py-3"
               target="_blank"
+              disabled={linkRepo === ""}
             >
               Github Repo
             </Button>

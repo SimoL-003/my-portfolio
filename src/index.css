@@ -143,6 +143,10 @@
     @apply inline-block w-fit font-medium tracking-wide text-accent-secondary border-2 border-accent-secondary bg-transparent transition-all duration-300 hover:bg-accent-secondary hover:border-accent-secondary hover:text-text-primary;
   }
 
+  .button__disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
   .label {
     @apply uppercase px-3 py-2 bg-surface-primary text-xs lg:text-sm font-normal leading-[120%] tracking-[1px];
   }

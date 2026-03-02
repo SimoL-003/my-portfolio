@@ -22,34 +22,6 @@ import movieCatalogueDetails from "../assets/images/projectsPreviews/movieCatalo
 import movieCatalogueAddReview from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_add-review.png";
 
 const projects = [
-  // MOVIE CATALOGUE (full stack)
-  {
-    id: "movie-catalogue",
-    title: "Movie Catalogue",
-    imgs: [
-      movieCatalogue,
-      movieCatalogueAddMovie,
-      movieCatalogueSearch,
-      movieCatalogueDetails,
-      movieCatalogueAddReview,
-    ],
-    caption: "",
-    description: "",
-    repo: "",
-    liveDemo: "",
-    tech: [
-      "React",
-      "Express",
-      "MySQL",
-      "React Router",
-      "Tailwind",
-      "Custom API",
-    ],
-    inHome: true,
-    problem: "",
-    solution: "",
-    learnings: "",
-  },
   // WEATHER APP
   {
     id: "weather-app",
@@ -62,14 +34,49 @@ const projects = [
     ],
     caption: "Applicazione meteo con ricerca e visualizzazione dettagliata.",
     description:
-      "Un'applicazione meteo che permette di cercare città e visualizzare le condizioni atmosferiche. Include una vista desktop e mobile responsive.",
+      "Un'applicazione meteo che permette di cercare la città desiderata e visualizzare le condizioni attuali, previsioni a breve termine e dettagli come umidità, vento e pressione. Ho utilizzato React per costruire l'interfaccia utente, Fetch API per ottenere i dati meteo da un'API esterna e Tailwind CSS per lo styling. L'app è responsive e ottimizzata per dispositivi mobili, con un design pulito e funzionale.",
     repo: "https://github.com/SimoL-003/weather-app",
     liveDemo: "",
     tech: ["React", "Axios", "Tailwind", "Responsive Design"],
     inHome: true,
-    problem: "",
-    solution: "",
-    learnings: "",
+    problem:
+      "Creare un'applicazione meteo responsive con dati dinamici da API esterna.",
+    solution:
+      "Ho utilizzato React per costruire l'interfaccia utente, axios per ottenere i dati meteo da un'API esterna e Tailwind CSS per lo styling.",
+    learnings:
+      "Fetch API, gestione dati dinamici, responsive design con Tailwind CSS.",
+  },
+  // MOVIE CATALOGUE (full stack)
+  {
+    id: "movie-catalogue",
+    title: "Movie Catalogue",
+    imgs: [
+      movieCatalogue,
+      movieCatalogueAddMovie,
+      movieCatalogueSearch,
+      movieCatalogueDetails,
+      movieCatalogueAddReview,
+    ],
+    caption: "Catalogo di film con backend personalizzato, CRUD e recensioni.",
+    description:
+      "Questa applicazione full stack è un catalogo di film con backend personalizzato, CRUD completo e sistema di recensioni. Ho sviluppato sia il frontend React che il backend Express con MySQL, creando un'API REST per gestire film e recensioni. L'app permette di visualizzare una lista di film, aggiungerne di nuovi, cercare per titolo e visualizzare i dettagli di ogni film, inclusa la possibilità di lasciare una recensione. Il progetto è stato un'ottima occasione per mettere in pratica le competenze full stack e lavorare su un'applicazione più complessa e realistica.",
+    repo: "https://github.com/SimoL-003/webapp-react",
+    liveDemo: "",
+    tech: [
+      "React",
+      "Express",
+      "MySQL",
+      "React Router",
+      "Tailwind",
+      "Custom API",
+    ],
+    inHome: true,
+    problem:
+      "Creare un'applicazione full stack completa con backend personalizzato e funzionalità CRUD.",
+    solution:
+      "Ho sviluppato sia il frontend React che il backend Express con MySQL, creando un'API REST per gestire film e recensioni.",
+    learnings:
+      "Competenze full stack, API REST, gestione database MySQL, React avanzato.",
   },
   // E-COMMERCE
   {
