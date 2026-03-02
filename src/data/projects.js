@@ -15,13 +15,24 @@ import weatherDesktop from "../assets/images/projectsPreviews/weather/weather-de
 import weatherDesktopSearch from "../assets/images/projectsPreviews/weather/weather-desktop-search.png";
 import weatherMobile from "../assets/images/projectsPreviews/weather/weather-mobile.png";
 import weatherMobileDaily from "../assets/images/projectsPreviews/weather/weather-mobile-daily.png";
+import movieCatalogue from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_list.png";
+import movieCatalogueAddMovie from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_add-movie.png";
+import movieCatalogueSearch from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_search.png";
+import movieCatalogueDetails from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_details.png";
+import movieCatalogueAddReview from "../assets/images/projectsPreviews/movieCatalogueAPI/movie-catalogue_add-review.png";
 
 const projects = [
   // MOVIE CATALOGUE (full stack)
   {
     id: "movie-catalogue",
     title: "Movie Catalogue",
-    imgs: [],
+    imgs: [
+      movieCatalogue,
+      movieCatalogueAddMovie,
+      movieCatalogueSearch,
+      movieCatalogueDetails,
+      movieCatalogueAddReview,
+    ],
     caption: "",
     description: "",
     repo: "",
