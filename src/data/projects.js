@@ -36,7 +36,7 @@ const projects = [
     description:
       "Un'applicazione meteo che permette di cercare la città desiderata e visualizzare le condizioni attuali, previsioni a breve termine e dettagli come umidità, vento e pressione. Ho utilizzato React per costruire l'interfaccia utente, Fetch API per ottenere i dati meteo da un'API esterna e Tailwind CSS per lo styling. L'app è responsive e ottimizzata per dispositivi mobili, con un design pulito e funzionale.",
     repo: "https://github.com/SimoL-003/weather-app",
-    liveDemo: "",
+    liveDemo: "https://weather-app-react-sl.netlify.app",
     tech: ["React", "Axios", "Tailwind", "Responsive Design"],
     inHome: true,
     problem:
