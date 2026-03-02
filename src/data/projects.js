@@ -11,8 +11,55 @@ import movieAppPreview from "../assets/images/projectsPreviews/movieApp/movieApp
 import movieAppFilter from "../assets/images/projectsPreviews/movieApp/movieApp-searchFilter.png";
 import movieAppFilterNoResult from "../assets/images/projectsPreviews/movieApp/movieApp-searchFilter__no-result.png";
 import movieAppModal from "../assets/images/projectsPreviews/movieApp/movieApp-modal.png";
+import weatherDesktop from "../assets/images/projectsPreviews/weather/weather-desktop.png";
+import weatherDesktopSearch from "../assets/images/projectsPreviews/weather/weather-desktop-search.png";
+import weatherMobile from "../assets/images/projectsPreviews/weather/weather-mobile.png";
+import weatherMobileDaily from "../assets/images/projectsPreviews/weather/weather-mobile-daily.png";
 
 const projects = [
+  // MOVIE CATALOGUE (full stack)
+  {
+    id: "movie-catalogue",
+    title: "Movie Catalogue",
+    imgs: [],
+    caption: "",
+    description: "",
+    repo: "",
+    liveDemo: "",
+    tech: [
+      "React",
+      "Express",
+      "MySQL",
+      "React Router",
+      "Tailwind",
+      "Custom API",
+    ],
+    inHome: true,
+    problem: "",
+    solution: "",
+    learnings: "",
+  },
+  // WEATHER APP
+  {
+    id: "weather-app",
+    title: "Weather App",
+    imgs: [
+      weatherDesktop,
+      weatherDesktopSearch,
+      weatherMobile,
+      weatherMobileDaily,
+    ],
+    caption: "Applicazione meteo con ricerca e visualizzazione dettagliata.",
+    description:
+      "Un'applicazione meteo che permette di cercare città e visualizzare le condizioni atmosferiche. Include una vista desktop e mobile responsive.",
+    repo: "https://github.com/SimoL-003/weather-app",
+    liveDemo: "",
+    tech: ["React", "Axios", "Tailwind", "Responsive Design"],
+    inHome: true,
+    problem: "",
+    solution: "",
+    learnings: "",
+  },
   // E-COMMERCE
   {
     id: "e-commerce",
@@ -26,7 +73,7 @@ const projects = [
     repo: "https://github.com/SimoL-003/react-context-api",
     liveDemo: "https://react-fake-store-sl.netlify.app",
     tech: ["React", "Fetch API", "React Router", "React Context"],
-    inHome: true,
+    inHome: false,
 
     problem:
       "Creare un frontend completo per un e-commerce con dati presi da API e un sistema intelligente di filtraggio basato sul budget dell’utente.",
@@ -68,7 +115,7 @@ const projects = [
     repo: "https://github.com/SimoL-003/js-recipes-api",
     liveDemo: "https://simol-003.github.io/js-recipes-api/",
     tech: ["JavaScript", "Fetch API", "HTML", "CSS"],
-    inHome: true,
+    inHome: false,
 
     problem:
       "Gestire dati complessi da API esterna e permettere filtri multipli combinati, mantenendo la UI fluida.",
